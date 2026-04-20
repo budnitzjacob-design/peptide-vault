@@ -1,0 +1,601 @@
+PEPTIDE VAULT — PEPTPEDIA SOURCE DATA COMPILATION
+Scraped: April 20, 2026
+Source: https://peptpedia.org
+Total Peptides Listed: 41
+================================================================================
+
+FULL PEPTIDE LIST (from /browse page)
+--------------------------------------
+1. BPC-157
+2. TB-500
+3. Ipamorelin
+4. CJC-1295
+5. Semax
+6. GHK-Cu
+7. Semaglutide (GLP-1)
+8. Tirzepatide (GLP-1/GIP)
+9. Retatrutide (Triple Agonist)
+10. Orforglipron
+11. Survodutide
+12. Cagrilintide
+13. Selank
+14. GHRP-6
+15. GHRP-2
+16. Hexarelin
+17. Sermorelin
+18. PT-141
+19. Melanotan II
+20. Epithalon
+21. LL-37
+22. Thymosin Alpha-1
+23. DSIP
+24. AOD-9604
+25. Tesamorelin
+26. Dihexa
+27. SNAP-8
+28. FOXO4-DRI
+29. MOTS-c
+30. Kisspeptin
+31. TB4-FRAG
+32. Liraglutide (GLP-1)
+33. Teduglutide (GLP-2)
+34. KPV
+35. Mazdutide
+36. Cerebrolysin
+37. Follistatin 344
+38. IGF-1 LR3
+39. Thymulin
+40. Oxytocin
+41. Pramlintide
+
+================================================================================
+PEPTIDE 1: BPC-157
+================================================================================
+Source URL: https://peptpedia.org/peptide/bpc-157
+
+NAMES
+  Primary:     BPC-157
+  Scientific:  Body Protection Compound-157
+  Proper:      Pentadecapeptide BPC 157
+  CAS:         137525-51-0
+
+MOLECULAR
+  Formula:     C62H98N16O22
+  MW:          1419.53 g/mol
+  Sequence:    Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val
+  AA Count:    15
+  Solubility:  Water soluble; reconstitute in bacteriostatic water
+
+PHARMACOKINETICS
+  Half-Life:   15.2 minutes (mean elimination; rats; IV)
+  Clearance:   Undetectable within 4 hours post-administration
+  Storage:     Lyophilized at -20°C; reconstituted at 4°C
+
+DOSING
+  Route              Dose                  Frequency
+  -------            ----                  ---------
+  Subcutaneous       10–20 mcg/kg          Once daily
+  Intramuscular      10–20 mcg/kg          Once daily
+  Intraperitoneal    10 mcg/kg – 10 mg/kg  Varies
+  Oral (gavage)      10 mcg/kg – 10 mg/kg  Once daily
+  Intravenous        10 mcg/kg             Single dose
+
+MECHANISMS OF ACTION
+  1. Growth Hormone Receptor (GHR) Upregulation — increases fibroblast sensitivity
+  2. FAK-Paxillin Pathway — promotes cell adhesion and tissue repair
+  3. Nitric Oxide Modulation — activates Src-Caveolin-1-eNOS phosphorylation
+  4. Egr-1/NAB2 Gene Loop — "master switch and brake" for organized angiogenesis
+
+PROTEIN CASCADES
+  Growth:          GHR upregulation, fibroblast GH sensitivity
+  Immune:          Reduces TNF-alpha, IL-1 beta, IL-6; enhances antioxidant systems
+  Cytokines:       TNF-alpha ↓, IL-1β ↓, IL-6 ↓
+  Proliferation:   Wound granulation, re-epithelialization
+  Metabolism:      Nitric oxide system modulation
+  Cancer:          Not primary; aberrant angiogenesis prevention via Egr-1/NAB2
+
+RESEARCH EFFECTS
+  Tissue Repair:    Skeletal muscle, tendon, ligament, bone — accelerated healing
+  GI Protection:    NSAID ulcers, alcohol damage, IBD models, Crohn's models
+  Anti-inflammatory: Reduces pro-inflammatory cytokines, ROS
+  Wound Healing:    2-3x faster in various models vs controls
+  Neuroprotection:  TBI protection, peripheral nerve regeneration
+  Organoprotection: Cardiac arrhythmia, hepatic, renal, pulmonary models
+
+HUMAN USE
+  Clinical Trials:  None completed or published as of 2026
+  Status:           Not approved for human use; research compound
+
+ANIMAL MODELS
+  Published Studies: >100 preclinical
+  Species:          Primarily rat models
+
+CITATIONS
+  [1] Sikiric et al. (2011). Stable gastric pentadecapeptide BPC 157 in trials for
+      inflammatory bowel disease. Current Pharmaceutical Design.
+  [2] Chang et al. (2014). Pentadecapeptide BPC 157 enhances the growth hormone
+      receptor expression in tendon fibroblasts. Molecules.
+  [3] Seveljevic-Jaran et al. (2018). BPC 157 and standard angiogenic growth
+      factors. Journal of Physiology and Pharmacology.
+  [4] Hsieh et al. (2020). Modulatory effects of BPC 157 on vasomotor tone.
+      Scientific Reports.
+  [5] Seiwerth et al. (2021). Stable Gastric Pentadecapeptide BPC 157 and Wound
+      Healing. Frontiers in Pharmacology.
+
+CATEGORIES
+  Recovery & Repair
+
+SAFETY PROFILE
+  Safety:       No serious adverse events in animal studies; no human data
+  Rating:       Preclinical safety established; human risk unknown
+
+================================================================================
+PEPTIDE 2: TB-500
+================================================================================
+Source URL: https://peptpedia.org/peptide/tb-500
+
+NAMES
+  Primary:     TB-500
+  Scientific:  Thymosin Beta-4
+  Aliases:     Tβ4, Thymosin B4
+  CAS:         77591-33-4
+
+MOLECULAR
+  Formula:     C212H350N56O78S
+  MW:          4963.44 g/mol
+  Sequence:    Ac-SDKPDMAEIEKFDKSKLKKTETQEKNPLPSKETIEQEKQAGES
+  Solubility:  Water-soluble; bacteriostatic water
+
+PHARMACOKINETICS
+  Half-Life:   ~30–60 min (rodent plasma); SC ~110 min
+  SC Peak:     ~60 minutes post-injection
+  Storage:     -20°C lyophilized; 4°C reconstituted
+
+DOSING
+  Route              Dose          Frequency        Notes
+  Subcutaneous       0.1–2.0 mg    1–2x weekly      Repair studies
+  Intramuscular      0.1–2.0 mg    1–2x weekly      Cardiac/musculoskeletal
+  Intravenous        0.1–1.0 mg/kg Per protocol     Cardiac ischemia models
+
+MECHANISMS OF ACTION
+  1. G-actin Sequestration — facilitates actin polymerization
+  2. ILK Activation — promotes cell survival via Akt signaling
+  3. Angiogenesis — upregulates VEGF and HIF-1α
+  4. Macrophage Polarization — M1 (inflammatory) → M2 (regenerative)
+  5. Anti-inflammatory — reduces IL-1β, TNF-α, oxidative stress
+
+PROTEIN CASCADES
+  Growth:       Cell migration, proliferation via ILK/Akt
+  Immune:       Macrophage polarization M1→M2; IL-1β↓, TNF-α↓
+  Cytokines:    IL-1β ↓, TNF-α ↓
+  Energy:       VEGF, HIF-1α angiogenesis (tissue oxygenation)
+  Proliferation: Keratinocyte migration +42% in scratch assays
+
+RESEARCH EFFECTS
+  Cell Migration: Enhanced via ILK signaling
+  Wound Healing:  Accelerated closure, improved collagen deposition, reduced scarring
+  Cardiac:        Reduces infarct size, decreases fibrosis, improves ejection fraction
+  Hair Follicle:  May enhance density and regrowth (animal models)
+
+HUMAN USE
+  Status: No peer-reviewed human clinical trials published as of 2026
+
+CITATIONS
+  [1] Malinda et al. (1999). Thymosin Beta-4 accelerates wound closure.
+      J Investigative Dermatology. PubMed: 10233741
+  [2] Bock-Marquette et al. (2004). Thymosin β4 activates integrin-linked kinase
+      and promotes cardiac cell migration, survival and cardiac repair. Nature.
+      PubMed: 15496926
+  [3] Philp et al. (2007). Multifunctional roles of Thymosin β4.
+      Annals NY Academy of Sciences. PubMed: 17456173
+
+CATEGORIES
+  Recovery & Repair, Tissue Repair & Regeneration, Wound Healing, Cardiac Research
+
+================================================================================
+PEPTIDE 3: IPAMORELIN
+================================================================================
+Source URL: https://peptpedia.org/peptide/ipamorelin
+
+NAMES
+  Primary:     Ipamorelin
+  Aliases:     Ipamorelin Acetate, NNC 26-0161
+  CAS:         170851-70-4
+
+MOLECULAR
+  Formula:     C38H49N9O5
+  MW:          711.85 g/mol
+  Sequence:    Aib-His-D-2-Nal-D-Phe-Lys-NH2
+  Class:       Synthetic pentapeptide growth hormone secretagogue
+
+PHARMACOKINETICS
+  Half-Life:   ~2 hours
+  GH Peak:     30–40 minutes post-injection
+  Duration:    2–3 hours per administration
+
+DOSING
+  Route              Dose         Frequency
+  Subcutaneous       1–3 mcg/kg   1–3x daily
+  Intravenous        1–3 mcg/kg   Single dose
+  Intraperitoneal    1–3 mcg/kg   Daily
+
+MECHANISMS
+  Selective GHSR-1a agonist (ghrelin receptor); stimulates pulsatile GH release
+  without significantly elevating cortisol, prolactin, or ACTH at therapeutic doses
+
+PROTEIN CASCADES
+  Growth:     GH/IGF-1 axis; bone formation
+  Metabolism: Lipolysis, lean mass, muscle protein synthesis
+  Energy:     Fat oxidation
+  Proliferation: Bone mineral content, longitudinal bone growth
+
+RESEARCH EFFECTS
+  GH Release:        Dose-dependent; maintains natural pulsatile rhythm
+  Body Composition:  Enhanced lipolysis, increased lean mass
+  Bone Metabolism:   Increased longitudinal bone growth
+
+HUMAN CLINICAL DATA
+  Status: Limited PK/PD studies; Phase II trial discontinued (NCT00272649)
+
+CITATIONS
+  [1] Raun et al. (1998). Ipamorelin selectivity profile. Eur J Endocrinology.
+      PMID: 9849822
+  [2] Gobburu et al. (1999). Human PK/PD study. Pharmaceutical Research.
+      PMID: 10496658
+  [3] Johansen et al. (1999). Longitudinal bone growth in rats. GH & IGF Research.
+      PMID: 10373343
+
+CATEGORIES
+  Growth Factors, Endocrinology, Metabolism Research
+
+================================================================================
+PEPTIDE 4: CJC-1295
+================================================================================
+Source URL: https://peptpedia.org/peptide/cjc-1295
+
+NAMES
+  Primary:     CJC-1295 DAC
+  Aliases:     Modified GRF 1-29, Drug Affinity Complex
+  CAS:         863288-34-0
+
+MOLECULAR
+  Formula:     C152H252N44O42
+  MW:          3367.89 g/mol
+  Sequence:    Tyr-D-Ala-Asp-Ala-Ile-Phe-Thr-Gln-Ser-Tyr-Arg-Lys-Val-Leu-Ala-
+               Gln-Leu-Ser-Ala-Arg-Lys-Leu-Leu-Gln-Asp-Ile-Leu-Ser-Arg-
+               Lys(Maleimidopropionyl-Lysine)
+
+PHARMACOKINETICS
+  Half-Life:   With DAC: 6–8 days | Without DAC: ~30 minutes
+  Storage:     Lyophilized -20°C; reconstituted 2–8°C (2–4 weeks)
+
+DOSING
+  With DAC (SC):    30–60 mcg/kg weekly/biweekly
+  Without DAC (SC): 100–300 mcg 2–3x daily
+  IV (DAC):         30–60 mcg/kg per protocol
+
+MECHANISM
+  GHRH receptor agonist; DAC enables covalent serum albumin binding → protects
+  from enzymatic degradation → 6–8 day half-life extension
+
+PROTEIN CASCADES
+  Growth:     GH/IGF-1 axis (50–200% IGF-1 elevation)
+  Metabolism: Visceral fat reduction, lipolysis, lean mass
+  Energy:     Slow-wave sleep enhancement
+
+RESEARCH EFFECTS
+  GH Elevation:     2–10 fold sustained for ~1 week
+  IGF-1:            50–200% above baseline
+  Body Composition: Reduced visceral adipose, improved lean mass
+  Synergy:          2–5x greater GH with GHRP combination
+
+CITATIONS
+  [1] Teichman et al. (2006). Prolonged stimulation of GH and IGF-1 by CJC-1295.
+      J Clin Endocrinol Metab. PMID: 16352683
+  [2] Alba et al. (2008). CJC-1295 combined with GHRP-6 synergistic effects.
+      J Endocrinological Investigation. PMID: 18787373
+
+CATEGORIES
+  Growth Factors, Endocrinology, Aging Research, Metabolism
+
+================================================================================
+PEPTIDE 5: SEMAX
+================================================================================
+Source URL: https://peptpedia.org/peptide/semax
+
+NAMES
+  Primary:   Semax
+  Aliases:   ACTH 4-10 Analog, Semax Acetate
+  CAS:       80714-61-0
+
+MOLECULAR
+  Formula:   C37H51N9O10S
+  MW:        813.93 g/mol
+  Sequence:  Met-Glu-His-Phe-Pro-Gly-Pro
+
+PHARMACOKINETICS
+  Half-Life: Several minutes in serum; CNS effects persist longer
+
+DOSING
+  Intranasal:    200–600 mcg/day, 1–2x daily (primary clinical route)
+  Subcutaneous:  50–300 mcg/day, once daily
+
+MECHANISMS
+  1. BDNF upregulation (hippocampus, cortex, basal forebrain)
+  2. NGF upregulation
+  3. Dopaminergic + serotonergic pathway activation
+  4. Enkephalin degradation inhibition
+  5. Anti-inflammatory + antioxidant
+  6. BBB penetration via intranasal olfactory/trigeminal routes
+
+PROTEIN CASCADES
+  Central Dogma:  Gene expression modification for neuronal plasticity
+  Immune:         Anti-inflammatory, antioxidant
+  Energy:         Neuronal metabolism support
+  Growth:         Neurogenesis support
+
+RESEARCH EFFECTS
+  Cognitive:       Memory, attention, processing speed, executive function
+  Neuroprotection: Stroke damage reduction, TBI defense
+  BDNF:           Elevated expression, neurogenesis support
+  Anxiolytic:      Anxiety reduction without sedation
+  Neurorestorative: Motor recovery, speech restoration
+
+HUMAN DATA
+  Approved in Russia (1994) and Ukraine for ischemic stroke, cognitive impairment
+  Not FDA/EMA approved
+
+CITATIONS
+  [1] Eremin et al. (2005). Semax activates dopaminergic and serotoninergic systems.
+      Neurochemical Research.
+  [2] Stavchansky et al. (2011). Semax regulates immune response genes.
+      Molecular Genetics and Metabolism.
+  [3] Gusev et al. (2006). Semax in treatment of acute ischemic stroke.
+      Zhurnal Nevrologii i Psikhiatrii.
+
+CATEGORIES
+  Cognitive Enhancement, Neuroprotection, Recovery & Repair
+
+================================================================================
+PEPTIDE 6: GHK-Cu
+================================================================================
+Source URL: https://peptpedia.org/peptide/ghk-cu
+
+NAMES
+  Primary:   GHK-Cu
+  Aliases:   Copper Peptide, Copper Tripeptide-1, GHK-Copper
+  CAS:       49557-75-7
+
+MOLECULAR
+  Formula:   C14H23CuN6O4
+  MW:        403.92 g/mol
+  Sequence:  Gly-His-Lys-Cu
+
+PHARMACOKINETICS
+  Half-Life SC: ~105 minutes
+  Topical:      Slow sustained absorption, prolonged tissue retention
+  Plasma age-dependent: ~200 ng/mL at age 20 → ~80 ng/mL at age 60 (-60%)
+
+DOSING
+  Topical:       1–5% concentration, 1–2x daily
+  Subcutaneous:  1–5 mg, 1–3x weekly
+
+MECHANISMS
+  1. Gene expression modulation (4,128 genes, ~32% of human genome)
+  2. Lysyl oxidase activation (collagen/elastin crosslinking)
+  3. Cytochrome C oxidase activation (energy metabolism)
+  4. Superoxide dismutase activation (antioxidant)
+
+PROTEIN CASCADES
+  Growth:      Collagen type I/III/elastin synthesis +70–200%
+  Immune:      IL-6↓, TNF-alpha↓, IL-1β↓; NF-κB suppression
+  Cytokines:   IL-6↓, TNF-alpha↓, IL-1β↓
+  Cancer:      Suppresses 54 metastatic phenotype-associated genes
+  Energy:      Cytochrome C oxidase, mitochondrial function
+  Metabolism:  Antioxidant enzymes (SOD, catalase, glutathione peroxidase)
+
+RESEARCH EFFECTS
+  Collagen: +70–200% type I, III, elastin (human dermal fibroblasts)
+  Wound Healing: +30% faster closure; reduced scarring via TGF-beta
+  Antioxidant: 2–4x increases in SOD, catalase, glutathione peroxidase
+  Hair Follicle: Extended anagen phase; reduced DHT miniaturization
+  Anti-aging:   55% reduction in fine lines (12-week double-blind trial, n=71)
+
+CITATIONS
+  [1] Pickart & Margolina (2015). Multi-pathway modulation. BioMed Research Int.
+      PubMed: 26236693
+  [2] Pickart et al. (2012). Gene modulation (~32% human genome). Biochimie.
+      PubMed: 22609831
+  [3] Abdulghani et al. (1998). Double-blind trial, 12 weeks, n=71 women.
+      J American Academy of Dermatology. PubMed: 9587407
+  [4] Maquart et al. (1988). Wound contraction +30% vs controls. FEBS Letters.
+      PubMed: 3402554
+
+CATEGORIES
+  Anti-Aging
+
+================================================================================
+PEPTIDE 7: SEMAGLUTIDE
+================================================================================
+Source URL: https://peptpedia.org/peptide/semaglutide
+
+NAMES
+  Primary:     Semaglutide
+  Trade:       Ozempic (SC T2D), Wegovy (SC obesity), Rybelsus (oral)
+  CAS:         910463-68-2
+  Homology:    94% to native human GLP-1
+
+MOLECULAR
+  Formula:     C187H291N45O59
+  MW:          4113.58 g/mol
+  Sequence:    His-Aib-Glu-Gly-Thr-Phe-Thr-Ser-Asp-Val-Ser-Ser-Tyr-Leu-Glu-Gly-
+               Gln-Ala-Ala-Lys(γGlu-γGlu-C18 diacid)-Glu-Phe-Ile-Ala-Trp-Leu-
+               Val-Arg-Gly-Arg-Gly
+
+PHARMACOKINETICS
+  Half-Life:   ~7 days (168 hours)
+  Bioavail SC: ~89%
+  Bioavail PO: ~1% (SNAC absorption enhancer)
+  Storage:     2–8°C (unopened); room temp up to 56 days in-use
+
+DOSING
+  Ozempic (SC):   0.25–2 mg weekly (T2D)
+  Wegovy (SC):    0.25–2.4 mg weekly (obesity)
+  Rybelsus (PO):  3–14 mg daily (fasted)
+
+MECHANISM
+  GLP-1 receptor agonist; C18 fatty acid → albumin binding → DPP-4 protection
+  Glucose-dependent insulin secretion, hypothalamic appetite suppression, slowed gastric emptying
+
+PROTEIN CASCADES
+  Metabolism:  cAMP → PKA cascade; insulin secretion; fat oxidation
+  Energy:      Gastric emptying, hepatic fat reduction
+  Growth:      Beta-cell protection, reduced glucotoxicity
+  Immune:      Reduced inflammatory markers, hepatic anti-fibrotic
+  Central Dogma: NASH resolution, neurogenesis
+
+RESEARCH EFFECTS
+  Glycemic: HbA1c -1.5–2.0% from baseline
+  Weight: -14.9% at 2.4 mg (STEP 1, 68 weeks); approaches bariatric outcomes
+  Cardiovascular: -26% MACE (SUSTAIN-6); -20% MACE (SELECT trial)
+  Hepatic: -40–60% hepatic fat (MRI); NASH resolution 59% vs 17% placebo
+  Neuro: Improved cognition, reduced amyloid-β in animal models
+
+HUMAN TRIALS (MAJOR)
+  STEP 1 (2021): N=1,961; 68 weeks; Wilding JPH et al. NEJM. PMID: 33567185
+  SUSTAIN-6 (2016): N=3,297; Marso et al. NEJM. PMID: 27633186
+  NASH Trial (2021): N=320; Newsome et al. NEJM. PMID: 33657293
+  SELECT (2023): N=17,604; -20% MACE; 3.3 years
+
+SAFETY
+  Contraindications: MTC/MEN2 history
+  Risks: Pancreatitis, gallbladder disease, gastroparesis
+  Hypoglycemia: Risk with insulin/sulfonylureas
+
+CATEGORIES
+  Metabolic, Diabetes Research, Obesity, Cardiovascular, NAFLD/NASH
+
+================================================================================
+PEPTIDE 8: EPITHALON
+================================================================================
+Source URL: https://peptpedia.org/peptide/epithalon
+
+NAMES
+  Primary:   Epithalon
+  Aliases:   Epitalon, Epithalone, AGAG
+  CAS:       307297-39-8
+
+MOLECULAR
+  Formula:   C14H22N4O9
+  MW:        390.35 g/mol
+  Sequence:  Ala-Glu-Asp-Gly
+  Class:     Synthetic tetrapeptide; analog of bovine pineal Epithalamin
+
+PHARMACOKINETICS
+  Half-Life: Not precisely established; minutes in plasma
+
+DOSING
+  SC:  5–10 mg/day, 10–20 days cyclical
+  IV:  10 mg/day, 10 days
+
+MECHANISMS
+  1. Telomerase activation — TERT gene via histone acetylation (+2–3 fold)
+  2. Pineal gland restoration — melatonin synthesis
+  3. Antioxidant — SOD, catalase, glutathione; reduces oxidative stress 25–40%
+  4. Immune modulation — restores thymic function; CD4+/CD8+ restoration
+
+PROTEIN CASCADES
+  Central Dogma: Telomerase/TERT epigenetic activation
+  Immune:        Thymic function, CD4+/CD8+ restoration
+  Proliferation:  Telomere lengthening (+33% in treated cells)
+  Energy:         Mitochondrial function, ROS reduction
+
+RESEARCH EFFECTS
+  Telomere:   +33% longer; 2.4x telomerase activity
+  Longevity:  10–25% lifespan extension (mouse); 11–16% (Drosophila)
+  Melatonin:  +50–100% nocturnal levels toward youthful baseline
+  Antioxidant: 25–40% lipid peroxidation reduction
+
+LIMITATIONS
+  Majority from single laboratory (Khavinson); no independent Western replication;
+  no Phase I/II/III human trials
+
+CITATIONS
+  [1] Khavinson & Malinin (2001). Peptide bioregulation of aging. Bull Exp Biol Med.
+      PubMed: 11586269
+  [2] Khavinson et al. (2003). Epithalon induces telomerase activity in human cells.
+      Bull Exp Biol Med. PubMed: 12937682
+  [3] Khavinson & Izmaylov (2000). Effect of Epithalon on aging in Drosophila.
+      Mech Ageing Dev. PubMed: 10719061
+
+CATEGORIES
+  Anti-Aging, Telomere Biology, Longevity Studies
+
+================================================================================
+PEPTIDE 9: PT-141 (BREMELANOTIDE)
+================================================================================
+Source URL: https://peptpedia.org/peptide/pt-141
+
+NAMES
+  Primary:   PT-141
+  Trade:     Vyleesi (FDA-approved)
+  Proper:    Bremelanotide
+  CAS:       189691-06-3
+
+MOLECULAR
+  Formula:   C50H68N14O10
+  MW:        1025.18 g/mol
+  Sequence:  Ac-Nle-cyclo(Asp-His-D-Phe-Arg-Trp-Lys)-OH
+
+PHARMACOKINETICS
+  Half-Life: 2.7 hours
+
+DOSING (FDA-APPROVED)
+  Route:      Subcutaneous injection
+  Dose:       1.75 mg
+  Timing:     ≥45 minutes before sexual activity
+  Frequency:  Once per 24h; max 8x monthly
+
+MECHANISMS
+  MC3R/MC4R agonist in hypothalamus/limbic system;
+  cAMP → PKA cascade; oxytocin release (PVN);
+  dopaminergic modulation; descending neural pathways
+
+PROTEIN CASCADES
+  Central Dogma: Hypothalamic MC3R/MC4R activation
+  Immune/Neuro:  Oxytocin release, dopamine modulation
+
+RESEARCH EFFECTS
+  Sexual Function: Significant increase in SSEs; reduced HSDD distress (Phase 3, N>1,200)
+  Onset/Duration: 30–60 min; effects up to 24 hours
+  Neuroimaging: Increased anterior cingulate cortex + insula activity
+
+ADVERSE EFFECTS
+  Nausea: 40%; Flushing: 20%; BP: +6 mmHg systolic
+
+REGULATORY STATUS
+  FDA-approved June 2019 for HSDD in premenopausal women
+
+CITATIONS
+  [1] Kingsberg et al. (2019). RECONNECT studies. Obstetrics & Gynecology.
+      DOI: 10.1097/AOG.0000000000003369
+  [2] Wessells et al. (2005). Penile erection via CNS pathways. Ann NY Acad Sci.
+      DOI: 10.1196/annals.1337.024
+  [3] Van der Ploeg et al. (2002). MC3R/MC4R sexual arousal. Curr Opin Pharmacol.
+      DOI: 10.1016/s1471-4892(02)00204-7
+
+CATEGORIES
+  Sexual Medicine, Neuroscience, Melanocortin Pathway
+
+================================================================================
+PENDING SCRAPE (32 remaining peptides — to be fetched in build phase)
+================================================================================
+  Tirzepatide, Retatrutide, Orforglipron, Survodutide, Cagrilintide, Selank,
+  GHRP-6, GHRP-2, Hexarelin, Sermorelin, Melanotan II, LL-37, Thymosin Alpha-1,
+  DSIP, AOD-9604, Tesamorelin, Dihexa, SNAP-8, FOXO4-DRI, MOTS-c, Kisspeptin,
+  TB4-FRAG, Liraglutide, Teduglutide, KPV, Mazdutide, Cerebrolysin,
+  Follistatin 344, IGF-1 LR3, Thymulin, Oxytocin, Pramlintide
+
+================================================================================
+END OF PEPTPEDIA SCRAPE
+================================================================================

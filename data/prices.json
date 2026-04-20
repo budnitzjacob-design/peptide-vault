@@ -1,0 +1,94 @@
+{
+  "_meta": {
+    "sources": [
+      "https://peakedlabs.com/blog/bpc-157-cost-guide-2026",
+      "https://www.peptidedeck.com/blog/cheapest-place-to-buy-peptides-online",
+      "https://pricetriton.com",
+      "https://www.uschemlabs.com",
+      "https://desertmobilemedical.com/peptide-therapy-pricing/"
+    ],
+    "description": "Research peptide price ranges by vendor tier. All prices in USD. Not an endorsement of any vendor. Prices fluctuate — verify before purchase.",
+    "last_updated": "2026-04-20",
+    "disclaimer": "For research reference only. Peptide pricing varies significantly. Verify independently.",
+    "regulatory_note": "As of Feb 27 2026, HHS announced ~14 peptides (BPC-157, TB-500, CJC-1295, Ipamorelin, Sermorelin) expected to return to Category 1 compounding status."
+  },
+  "tiers": {
+    "budget": { "label": "Budget", "description": "Low-cost vendors; purity often 60–85%", "color": "#ef4444" },
+    "mid":    { "label": "Mid-Tier", "description": "Established vendors; purity varies", "color": "#f59e0b" },
+    "verified": { "label": "Verified", "description": "Third-party COA; purity 98%+", "color": "#22c55e" },
+    "clinical": { "label": "Clinical / Compounding", "description": "Pharmacy-compounded, prescription", "color": "#4f8ef7" }
+  },
+  "peptides": {
+    "bpc-157": {
+      "unit": "5 mg vial",
+      "tiers": {
+        "budget":   { "price_range": "$8–$18",   "purity_note": "Often 60–85%; independent testing frequently shows underdosing" },
+        "mid":      { "price_range": "$28–$44",   "purity_note": "Variable; some mid-tier vendors pass third-party testing" },
+        "verified": { "price_range": "$32–$48",   "purity_note": "98%+ verified; batch-specific HPLC/MS from independent labs (Janoshik, Colmaric)" },
+        "clinical": { "price_range": "$200–$500/mo", "purity_note": "Pharmacy-compounded 503A/503B; prescription required" }
+      },
+      "monthly_protocol_cost": "$120–$160/month (500 mcg/day, verified vendor)",
+      "sources": [
+        { "vendor": "Ascension Peptides", "tier": "verified", "price": "$32–$48/5mg", "url": "https://peakedlabs.com/blog/bpc-157-cost-guide-2026" }
+      ],
+      "last_updated": "2026-04-20"
+    },
+    "tb-500": {
+      "unit": "5 mg vial",
+      "tiers": {
+        "budget":   { "price_range": "$10–$22",   "purity_note": "Often 60–85%" },
+        "mid":      { "price_range": "$36–$52",   "purity_note": "Variable" },
+        "verified": { "price_range": "$40–$55",   "purity_note": "98%+ verified" }
+      },
+      "monthly_protocol_cost": "~$80–$160/month (1–2 mg, 2x/week)",
+      "sources": [],
+      "last_updated": "2026-04-20"
+    },
+    "ipamorelin": {
+      "unit": "2 mg vial",
+      "tiers": {
+        "budget":   { "price_range": "$5–$12",    "purity_note": "Often underdosed" },
+        "mid":      { "price_range": "$18–$28",   "purity_note": "Variable" },
+        "verified": { "price_range": "$20–$30",   "purity_note": "98%+ verified" }
+      },
+      "monthly_protocol_cost": "~$80–$150/month (CJC+Ipa stack)",
+      "sources": [],
+      "last_updated": "2026-04-20"
+    },
+    "cjc-1295": {
+      "unit": "2 mg vial",
+      "tiers": {
+        "budget":   { "price_range": "$8–$20",    "purity_note": "Often underdosed" },
+        "mid":      { "price_range": "$25–$40",   "purity_note": "Variable" },
+        "verified": { "price_range": "$30–$50",   "purity_note": "98%+ verified" }
+      },
+      "monthly_protocol_cost": "~$80–$150/month (CJC+Ipa stack)",
+      "sources": [],
+      "last_updated": "2026-04-20"
+    },
+    "ghk-cu": {
+      "unit": "50 mg",
+      "tiers": {
+        "budget":   { "price_range": "$15–$30",   "purity_note": "Often 60–85%" },
+        "mid":      { "price_range": "$45–$70",   "purity_note": "Variable" },
+        "verified": { "price_range": "$50–$75",   "purity_note": "98%+ verified" }
+      },
+      "monthly_protocol_cost": "~$30–$75/month (topical or SC)",
+      "sources": [],
+      "last_updated": "2026-04-20"
+    },
+    "semaglutide": {
+      "unit": "1 mg vial",
+      "tiers": {
+        "budget":   { "price_range": "$20–$35/mg",  "purity_note": "Research use only; purity unverified" },
+        "mid":      { "price_range": "$35–$60/mg",  "purity_note": "Variable" },
+        "verified": { "price_range": "$50–$80/mg",  "purity_note": "COA-verified research grade" },
+        "clinical": { "price_range": "$200–$1500/mo","purity_note": "FDA-approved Ozempic/Wegovy; prescription" }
+      },
+      "sources": [
+        { "vendor": "US Chem Labs", "tier": "budget", "price": "$26.47/1mg (5-vial pack)", "url": "https://www.uschemlabs.com/product/semaglutide-1mg-5-vials/" }
+      ],
+      "last_updated": "2026-04-20"
+    }
+  }
+}

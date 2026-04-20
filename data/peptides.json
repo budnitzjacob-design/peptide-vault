@@ -1,0 +1,901 @@
+[
+  {
+    "id": "bpc-157",
+    "slug": "bpc-157",
+    "names": {
+      "trade": "BPC-157",
+      "scientific": "Body Protection Compound-157",
+      "proper": "Pentadecapeptide BPC 157",
+      "aliases": ["BPC157", "PL 14736", "Bepecin"]
+    },
+    "sequence": {
+      "one_letter": "GEPPPGKPADDAGLV",
+      "three_letter": "Gly-Glu-Pro-Pro-Pro-Gly-Lys-Pro-Ala-Asp-Asp-Ala-Gly-Leu-Val",
+      "length": 15
+    },
+    "molecular": {
+      "formula": "C62H98N16O22",
+      "weight": 1419.53,
+      "cas": "137525-51-0",
+      "chemical_family": "Gastric peptide",
+      "structure_class": "Linear peptide",
+      "solubility": "Water soluble"
+    },
+    "pharmacokinetics": {
+      "half_life": "15.2 min (IV, rat)",
+      "half_life_short": "15 min",
+      "half_life_category": "ultra-short",
+      "bioavailability": { "SC": "moderate", "oral": "high (gastric stable)" },
+      "routes": ["SC", "IM", "IV", "oral", "IP"]
+    },
+    "dosing": [
+      { "route": "Subcutaneous", "dose": "10–20 mcg/kg", "frequency": "Once daily", "notes": "" },
+      { "route": "Intramuscular", "dose": "10–20 mcg/kg", "frequency": "Once daily", "notes": "" },
+      { "route": "Oral", "dose": "10 mcg/kg–10 mg/kg", "frequency": "Once daily", "notes": "Gastric stable" },
+      { "route": "Intravenous", "dose": "10 mcg/kg", "frequency": "Single dose", "notes": "Research only" }
+    ],
+    "cascades": {
+      "metabolism": [
+        { "name": "Nitric Oxide Modulation", "detail": "Activates Src-Caveolin-1-eNOS phosphorylation pathway for vascular function and tissue perfusion." },
+        { "name": "eNOS Phosphorylation", "detail": "Endothelial nitric oxide synthase activation leads to vasodilation and improved blood flow to repair sites." }
+      ],
+      "energy_generation": [],
+      "growth": [
+        { "name": "GHR Upregulation", "detail": "Increases growth hormone receptor expression in tendon fibroblasts, amplifying sensitivity to healing signals even after peptide clearance." },
+        { "name": "FAK-Paxillin Pathway", "detail": "Focal adhesion kinase activation promotes cell adhesion, spreading, and organized tissue repair." }
+      ],
+      "proliferation": [
+        { "name": "Fibroblast Proliferation", "detail": "Promotes fibroblast migration and proliferation essential for connective tissue repair." },
+        { "name": "Organized Angiogenesis (Egr-1/NAB2)", "detail": "The Egr-1/NAB2 gene loop acts as both accelerator and brake for blood vessel formation, preventing aberrant growth." },
+        { "name": "Re-epithelialization", "detail": "Accelerates keratinocyte migration and epithelial coverage of wound surfaces." }
+      ],
+      "cancer": [
+        { "name": "Angiogenesis Control", "detail": "Egr-1/NAB2 'master switch' prevents uncontrolled neovascularization that could promote tumor growth." }
+      ],
+      "central_dogma": [
+        { "name": "Transcription Factor Activation", "detail": "Rapidly activates c-Fos, c-Jun, and Egr-1 transcription factors within first hour; gene expression changes persist for weeks despite short peptide half-life." }
+      ],
+      "immune_function": [
+        { "name": "Anti-inflammatory", "detail": "Reduces pro-inflammatory cytokines and enhances antioxidant enzyme systems to manage tissue inflammation." }
+      ],
+      "cytokines": [
+        { "name": "TNF-α ↓", "detail": "Significant reduction of tumor necrosis factor alpha in inflamed tissues." },
+        { "name": "IL-1β ↓", "detail": "Interleukin-1 beta suppression reduces the acute inflammatory response." },
+        { "name": "IL-6 ↓", "detail": "Interleukin-6 reduction modulates both local and systemic inflammatory signaling." }
+      ]
+    },
+    "effects": {
+      "clinical_categories": ["Recovery & Repair", "GI Protection", "Neuroprotection"],
+      "clinical_effects": [
+        { "name": "Tissue Repair", "subcategory": "Musculoskeletal", "evidence": "Extensive" },
+        { "name": "GI Protection", "subcategory": "Gastrointestinal", "evidence": "Extensive" },
+        { "name": "Wound Healing", "subcategory": "Dermatology", "evidence": "Extensive" },
+        { "name": "Anti-inflammatory", "subcategory": "Systemic", "evidence": "Moderate" },
+        { "name": "Neuroprotection", "subcategory": "CNS", "evidence": "Preliminary" }
+      ],
+      "safety_rating": 3,
+      "safety_label": "Animal models only",
+      "human_use": {
+        "summary": "No human clinical trials completed or published as of 2026. BPC-157 is derived from a protein found in human gastric juice, giving it theoretical translational relevance. Anecdotal reports in biohacking communities describe use for tendon injuries, GI conditions, and post-surgical recovery, but no peer-reviewed human data exists. Not approved for human use by any regulatory agency.",
+        "citations": []
+      },
+      "animal_models": {
+        "summary": "Over 100 preclinical studies, primarily in rat models. Demonstrates 2–3× faster healing in tendon, ligament, muscle, and bone injury models. Protects against NSAID-induced gastric lesions, alcohol toxicity, and IBD-like conditions. Shows cardiac arrhythmia elimination, TBI neuroprotection, and peripheral nerve regeneration. Oral bioavailability maintained in gastric juice — unique among peptides.",
+        "citations": [
+          { "id": "sikiric2011", "authors": "Sikiric P, et al.", "year": 2011, "title": "Stable gastric pentadecapeptide BPC 157 in trials for inflammatory bowel disease", "journal": "Current Pharmaceutical Design", "url": "https://pubmed.ncbi.nlm.nih.gov/21352100/" },
+          { "id": "seiwerth2021", "authors": "Seiwerth S, et al.", "year": 2021, "title": "Stable Gastric Pentadecapeptide BPC 157 and Wound Healing", "journal": "Frontiers in Pharmacology", "url": "https://pubmed.ncbi.nlm.nih.gov/33912074/" }
+        ]
+      },
+      "performance": {
+        "summary": "Widely studied in athletic and biohacking communities for accelerated recovery from tendon and muscle injuries. Rat data shows faster return to baseline function following surgically induced muscle tears and tendon transections. No human performance studies exist. Most cited use case: recovery from overuse injuries and post-surgical healing acceleration.",
+        "citations": [
+          { "id": "chang2014", "authors": "Chang CH, et al.", "year": 2014, "title": "Pentadecapeptide BPC 157 enhances the growth hormone receptor expression in tendon fibroblasts", "journal": "Molecules", "url": "https://pubmed.ncbi.nlm.nih.gov/25387025/" }
+        ]
+      }
+    },
+    "safety": {
+      "rating": 3,
+      "label": "Preclinical — no human trial data",
+      "contraindications": [],
+      "adverse_events": "No serious adverse events in animal studies across >100 publications",
+      "regulatory": "Not approved for human use. Research compound only."
+    },
+    "citations": [
+      { "id": "sikiric2011", "authors": "Sikiric P, et al.", "year": 2011, "title": "Stable gastric pentadecapeptide BPC 157 in trials for inflammatory bowel disease", "journal": "Current Pharmaceutical Design", "url": "https://pubmed.ncbi.nlm.nih.gov/21352100/" },
+      { "id": "chang2014", "authors": "Chang CH, et al.", "year": 2014, "title": "Pentadecapeptide BPC 157 enhances the growth hormone receptor expression in tendon fibroblasts", "journal": "Molecules", "url": "https://pubmed.ncbi.nlm.nih.gov/25387025/" },
+      { "id": "hsieh2020", "authors": "Hsieh MJ, et al.", "year": 2020, "title": "Modulatory effects of BPC 157 on vasomotor tone and Src-Caveolin-1-eNOS pathway", "journal": "Scientific Reports", "url": "https://pubmed.ncbi.nlm.nih.gov/33037232/" },
+      { "id": "seiwerth2021", "authors": "Seiwerth S, et al.", "year": 2021, "title": "Stable Gastric Pentadecapeptide BPC 157 and Wound Healing", "journal": "Frontiers in Pharmacology", "url": "https://pubmed.ncbi.nlm.nih.gov/33912074/" }
+    ],
+    "related": ["tb-500", "ghk-cu", "tb4-frag"],
+    "last_updated": "2026-04-20"
+  },
+  {
+    "id": "tb-500",
+    "slug": "tb-500",
+    "names": {
+      "trade": "TB-500",
+      "scientific": "Thymosin Beta-4",
+      "proper": "Thymosin Beta-4 Synthetic Fragment",
+      "aliases": ["Tβ4", "TB500", "Thymosin B4"]
+    },
+    "sequence": {
+      "one_letter": "SDKPDMAEIEKFDKSKLKKTETQEKNPLPSKETIEQEKQAGES",
+      "three_letter": "Ac-Ser-Asp-Lys-Pro-Asp-Met-Ala-Glu-Ile-Glu-Lys-Phe-Asp-Lys-Ser-Lys-Leu-Lys-Lys-...",
+      "length": 43
+    },
+    "molecular": {
+      "formula": "C212H350N56O78S",
+      "weight": 4963.44,
+      "cas": "77591-33-4",
+      "chemical_family": "Thymosin",
+      "structure_class": "Linear peptide",
+      "solubility": "Water-soluble"
+    },
+    "pharmacokinetics": {
+      "half_life": "30–60 min (rodent plasma); SC ~110 min",
+      "half_life_short": "30–60 min",
+      "half_life_category": "ultra-short",
+      "bioavailability": { "SC": "moderate", "IM": "similar to SC" },
+      "routes": ["SC", "IM", "IV"]
+    },
+    "dosing": [
+      { "route": "Subcutaneous", "dose": "0.1–2.0 mg", "frequency": "1–2× weekly", "notes": "Most common in repair studies" },
+      { "route": "Intramuscular", "dose": "0.1–2.0 mg", "frequency": "1–2× weekly", "notes": "Cardiac/musculoskeletal models" },
+      { "route": "Intravenous", "dose": "0.1–1.0 mg/kg", "frequency": "Per protocol", "notes": "Cardiac ischemia models" }
+    ],
+    "cascades": {
+      "metabolism": [],
+      "energy_generation": [
+        { "name": "VEGF/HIF-1α Pathway", "detail": "Upregulates VEGF and HIF-1α, promoting angiogenesis and improved tissue oxygenation at repair sites." }
+      ],
+      "growth": [
+        { "name": "ILK/Akt Signaling", "detail": "Integrin-linked kinase activation promotes cell survival and migration through Akt (PKB) pathway, critical for cardiac and musculoskeletal repair." }
+      ],
+      "proliferation": [
+        { "name": "Keratinocyte Migration", "detail": "+42% increase in keratinocyte migration speed in scratch assays, directly accelerating wound closure." },
+        { "name": "G-Actin Sequestration", "detail": "Direct interaction with G-actin facilitates actin polymerization, enabling cell motility during tissue repair." }
+      ],
+      "cancer": [],
+      "central_dogma": [],
+      "immune_function": [
+        { "name": "Macrophage Polarization M1→M2", "detail": "Shifts macrophage phenotype from pro-inflammatory M1 to regenerative M2, converting the tissue environment from damage to repair mode." }
+      ],
+      "cytokines": [
+        { "name": "IL-1β ↓", "detail": "Interleukin-1 beta suppression reduces acute inflammatory tissue damage." },
+        { "name": "TNF-α ↓", "detail": "Tumor necrosis factor alpha reduction limits tissue destruction in inflammatory models." }
+      ]
+    },
+    "effects": {
+      "clinical_categories": ["Recovery & Repair", "Cardiac Research", "Wound Healing"],
+      "clinical_effects": [
+        { "name": "Cell Migration", "subcategory": "Cellular Biology", "evidence": "Extensive" },
+        { "name": "Wound Healing", "subcategory": "Dermatology", "evidence": "Extensive" },
+        { "name": "Cardiac Repair", "subcategory": "Cardiovascular", "evidence": "Moderate" },
+        { "name": "Anti-inflammatory", "subcategory": "Systemic", "evidence": "Moderate" },
+        { "name": "Hair Follicle", "subcategory": "Dermatology", "evidence": "Preliminary" }
+      ],
+      "safety_rating": 3,
+      "safety_label": "Animal models only",
+      "human_use": {
+        "summary": "No peer-reviewed human clinical trials for TB-500 specifically have been published as of 2026. Not approved for human use by any regulatory agency. Naturally occurring Thymosin Beta-4 has been studied in a few human contexts (corneal healing), but the synthetic TB-500 fragment lacks clinical trial data.",
+        "citations": []
+      },
+      "animal_models": {
+        "summary": "Extensive preclinical data across multiple species and tissue types. Reduces cardiac infarct size and improves ejection fraction in mouse ischemia models. Accelerates wound closure and reduces scarring. Demonstrates macrophage polarization from M1 to M2. Hair follicle stimulation in animal models (density, regrowth). Long-distance tissue distribution from injection site due to low molecular weight.",
+        "citations": [
+          { "id": "bockmarquette2004", "authors": "Bock-Marquette I, et al.", "year": 2004, "title": "Thymosin β4 activates integrin-linked kinase and promotes cardiac cell migration, survival and cardiac repair", "journal": "Nature", "url": "https://pubmed.ncbi.nlm.nih.gov/15496926/" },
+          { "id": "philp2007", "authors": "Philp D, et al.", "year": 2007, "title": "Multifunctional roles of Thymosin β4", "journal": "Annals NY Academy of Sciences", "url": "https://pubmed.ncbi.nlm.nih.gov/17456173/" }
+        ]
+      },
+      "performance": {
+        "summary": "Interest in athletic recovery primarily driven by cardiac and musculoskeletal repair data. Theoretical applications in reducing recovery time from muscle and tendon injuries. No human sports medicine studies published.",
+        "citations": [
+          { "id": "malinda1999", "authors": "Malinda KM, et al.", "year": 1999, "title": "Thymosin beta 4 accelerates wound healing", "journal": "J Investigative Dermatology", "url": "https://pubmed.ncbi.nlm.nih.gov/10233741/" }
+        ]
+      }
+    },
+    "safety": {
+      "rating": 3,
+      "label": "Preclinical — no human trial data",
+      "contraindications": [],
+      "adverse_events": "No significant adverse events in preclinical studies",
+      "regulatory": "Not approved for human use. Research compound only."
+    },
+    "citations": [
+      { "id": "malinda1999", "authors": "Malinda KM, et al.", "year": 1999, "title": "Thymosin beta 4 accelerates wound healing", "journal": "J Investigative Dermatology", "url": "https://pubmed.ncbi.nlm.nih.gov/10233741/" },
+      { "id": "bockmarquette2004", "authors": "Bock-Marquette I, et al.", "year": 2004, "title": "Thymosin β4 activates integrin-linked kinase and promotes cardiac cell migration", "journal": "Nature", "url": "https://pubmed.ncbi.nlm.nih.gov/15496926/" },
+      { "id": "philp2007", "authors": "Philp D, et al.", "year": 2007, "title": "Multifunctional roles of Thymosin β4", "journal": "Annals NY Academy of Sciences", "url": "https://pubmed.ncbi.nlm.nih.gov/17456173/" }
+    ],
+    "related": ["bpc-157", "tb4-frag", "ghk-cu"],
+    "last_updated": "2026-04-20"
+  },
+  {
+    "id": "ipamorelin",
+    "slug": "ipamorelin",
+    "names": {
+      "trade": "Ipamorelin",
+      "scientific": "Ipamorelin Acetate",
+      "proper": "NNC 26-0161",
+      "aliases": ["Ipamorelin", "NNC-26-0161"]
+    },
+    "sequence": {
+      "one_letter": "Aib-His-D-2-Nal-D-Phe-Lys-NH2",
+      "three_letter": "Aib-His-D-2-Nal-D-Phe-Lys-NH2",
+      "length": 5
+    },
+    "molecular": {
+      "formula": "C38H49N9O5",
+      "weight": 711.85,
+      "cas": "170851-70-4",
+      "chemical_family": "GH secretagogue",
+      "structure_class": "Synthetic pentapeptide",
+      "solubility": "Water soluble"
+    },
+    "pharmacokinetics": {
+      "half_life": "~2 hours",
+      "half_life_short": "2 h",
+      "half_life_category": "short",
+      "bioavailability": { "SC": "moderate", "IV": "complete" },
+      "routes": ["SC", "IV", "IP"]
+    },
+    "dosing": [
+      { "route": "Subcutaneous", "dose": "1–3 mcg/kg", "frequency": "1–3× daily", "notes": "Often combined with CJC-1295" },
+      { "route": "Intravenous", "dose": "1–3 mcg/kg", "frequency": "Single dose", "notes": "Research use" },
+      { "route": "Intraperitoneal", "dose": "1–3 mcg/kg", "frequency": "Daily", "notes": "Animal models" }
+    ],
+    "cascades": {
+      "metabolism": [
+        { "name": "Lipolysis", "detail": "GH-mediated increase in hormone-sensitive lipase activity promotes fat mobilization from adipose tissue." }
+      ],
+      "energy_generation": [
+        { "name": "Fat Oxidation", "detail": "Elevated GH drives preferential oxidation of fatty acids for energy, supporting body composition improvements." }
+      ],
+      "growth": [
+        { "name": "GH/IGF-1 Axis", "detail": "Selective GHSR-1a agonist stimulates pulsatile GH release from anterior pituitary. GH triggers hepatic IGF-1 secretion, driving anabolic growth signals." },
+        { "name": "Bone Formation", "detail": "Increased longitudinal bone growth demonstrated in rat models via elevated GH/IGF-1 signaling. Enhanced bone mineral content in glucocorticoid-treated animals." }
+      ],
+      "proliferation": [
+        { "name": "Muscle Protein Synthesis", "detail": "IGF-1 activation of PI3K/Akt/mTOR pathway increases skeletal muscle protein synthesis rate." }
+      ],
+      "cancer": [],
+      "central_dogma": [],
+      "immune_function": [],
+      "cytokines": []
+    },
+    "effects": {
+      "clinical_categories": ["Growth Factors", "Metabolism", "Bone Health"],
+      "clinical_effects": [
+        { "name": "GH Release", "subcategory": "Endocrine", "evidence": "Extensive" },
+        { "name": "Body Composition", "subcategory": "Metabolism", "evidence": "Moderate" },
+        { "name": "Bone Density", "subcategory": "Musculoskeletal", "evidence": "Moderate" },
+        { "name": "Sleep Quality", "subcategory": "Neurological", "evidence": "Preliminary" }
+      ],
+      "safety_rating": 3,
+      "safety_label": "Limited human data",
+      "human_use": {
+        "summary": "Limited human pharmacokinetic and pharmacodynamic studies published. A Phase II clinical trial for postoperative ileus (NCT00272649) was initiated but discontinued. No published efficacy trials for GH deficiency or anti-aging indications. Two PK/PD studies documented GH response in healthy volunteers. Not FDA-approved.",
+        "citations": [
+          { "id": "gobburu1999", "authors": "Gobburu JV, et al.", "year": 1999, "title": "Pharmacokinetic-pharmacodynamic modeling of ipamorelin, a growth hormone releasing peptide, in human volunteers", "journal": "Pharmaceutical Research", "url": "https://pubmed.ncbi.nlm.nih.gov/10496658/" }
+        ]
+      },
+      "animal_models": {
+        "summary": "Robust data in rat models. Stimulates GH release with high selectivity — minimal effect on cortisol, prolactin, ACTH. Increases longitudinal bone growth. Reverses glucocorticoid-induced bone loss. Enhanced body composition in metabolic studies.",
+        "citations": [
+          { "id": "raun1998", "authors": "Raun K, et al.", "year": 1998, "title": "Ipamorelin, the first selective growth hormone secretagogue", "journal": "European Journal of Endocrinology", "url": "https://pubmed.ncbi.nlm.nih.gov/9849822/" },
+          { "id": "johansen1999", "authors": "Johansen PB, et al.", "year": 1999, "title": "Ipamorelin, a new growth-hormone-releasing peptide, induces longitudinal bone growth in rats", "journal": "Growth Hormone & IGF Research", "url": "https://pubmed.ncbi.nlm.nih.gov/10373343/" }
+        ]
+      },
+      "performance": {
+        "summary": "Widely used in combination with CJC-1295 in longevity and performance protocols. Theoretical benefits include improved body composition, enhanced recovery, and sleep quality via pulsatile GH release. No controlled human performance studies.",
+        "citations": []
+      }
+    },
+    "safety": {
+      "rating": 3,
+      "label": "Limited human data — preclinical safety established",
+      "contraindications": ["Active malignancy (theoretical — GH elevation)"],
+      "adverse_events": "Well-tolerated in limited human studies; no serious adverse events in animals",
+      "regulatory": "Not FDA-approved. Research use only. Phase II trial discontinued."
+    },
+    "citations": [
+      { "id": "raun1998", "authors": "Raun K, et al.", "year": 1998, "title": "Ipamorelin, the first selective growth hormone secretagogue", "journal": "European Journal of Endocrinology", "url": "https://pubmed.ncbi.nlm.nih.gov/9849822/" },
+      { "id": "gobburu1999", "authors": "Gobburu JV, et al.", "year": 1999, "title": "Pharmacokinetic-pharmacodynamic modeling of ipamorelin", "journal": "Pharmaceutical Research", "url": "https://pubmed.ncbi.nlm.nih.gov/10496658/" },
+      { "id": "johansen1999", "authors": "Johansen PB, et al.", "year": 1999, "title": "Ipamorelin induces longitudinal bone growth in rats", "journal": "Growth Hormone & IGF Research", "url": "https://pubmed.ncbi.nlm.nih.gov/10373343/" }
+    ],
+    "related": ["cjc-1295", "ghrp-6", "ghrp-2", "sermorelin"],
+    "last_updated": "2026-04-20"
+  },
+  {
+    "id": "cjc-1295",
+    "slug": "cjc-1295",
+    "names": {
+      "trade": "CJC-1295 DAC",
+      "scientific": "Modified GRF 1-29 with Drug Affinity Complex",
+      "proper": "CJC-1295",
+      "aliases": ["Mod GRF 1-29", "CJC1295", "Drug Affinity Complex GHRH"]
+    },
+    "sequence": {
+      "one_letter": "YADAIFTQSYRKVAQLSARKLLLQDIMSRK",
+      "three_letter": "Tyr-D-Ala-Asp-Ala-Ile-Phe-Thr-Gln-Ser-Tyr-Arg-Lys-Val-Leu-Ala-Gln-Leu-Ser-Ala-Arg-Lys-...",
+      "length": 30
+    },
+    "molecular": {
+      "formula": "C152H252N44O42",
+      "weight": 3367.89,
+      "cas": "863288-34-0",
+      "chemical_family": "GHRH analog",
+      "structure_class": "Modified linear peptide (DAC conjugate)",
+      "solubility": "Water soluble"
+    },
+    "pharmacokinetics": {
+      "half_life": "With DAC: 6–8 days | Without DAC: ~30 min",
+      "half_life_short": "6–8 days (DAC)",
+      "half_life_category": "long",
+      "bioavailability": { "SC": "high" },
+      "routes": ["SC", "IV"]
+    },
+    "dosing": [
+      { "route": "SC (with DAC)", "dose": "30–60 mcg/kg", "frequency": "Weekly or biweekly", "notes": "Sustained GH elevation 6–8 days" },
+      { "route": "SC (without DAC)", "dose": "100–300 mcg", "frequency": "2–3× daily", "notes": "Mod GRF 1-29 — acute GH pulses" },
+      { "route": "IV", "dose": "30–60 mcg/kg", "frequency": "Per protocol", "notes": "Clinical PK studies" }
+    ],
+    "cascades": {
+      "metabolism": [
+        { "name": "Lipolysis via GH", "detail": "Sustained GH elevation drives hormone-sensitive lipase activation, promoting visceral and subcutaneous fat mobilization." }
+      ],
+      "energy_generation": [
+        { "name": "Fat Oxidation", "detail": "GH-mediated metabolic shift toward fatty acid oxidation for fuel, sparing glucose and protein." }
+      ],
+      "growth": [
+        { "name": "GH/IGF-1 Axis (Sustained)", "detail": "2–10 fold mean GH elevation persisting throughout the week. IGF-1 increases 50–200% above baseline for up to 2 weeks. Drives anabolic signaling in muscle, bone, and connective tissue." }
+      ],
+      "proliferation": [
+        { "name": "Lean Mass Increase", "detail": "Chronic GH/IGF-1 elevation activates mTOR pathway in skeletal muscle, increasing protein synthesis and lean body mass." }
+      ],
+      "cancer": [],
+      "central_dogma": [],
+      "immune_function": [],
+      "cytokines": []
+    },
+    "effects": {
+      "clinical_categories": ["Growth Factors", "Metabolism", "Aging Research"],
+      "clinical_effects": [
+        { "name": "Sustained GH Elevation", "subcategory": "Endocrine", "evidence": "Extensive" },
+        { "name": "IGF-1 Increase", "subcategory": "Endocrine", "evidence": "Extensive" },
+        { "name": "Body Composition", "subcategory": "Metabolism", "evidence": "Moderate" },
+        { "name": "Sleep Quality", "subcategory": "Neurological", "evidence": "Preliminary" }
+      ],
+      "safety_rating": 2,
+      "safety_label": "Human pharmacokinetic data available",
+      "human_use": {
+        "summary": "Human PK/PD studies demonstrate dose-dependent sustained GH and IGF-1 elevation from single injection. Teichman et al. (2006) in JCEM established the 6–8 day half-life profile with DAC. Well-tolerated in healthy adults with injection site reactions and water retention as primary side effects. No long-term safety or efficacy trials published.",
+        "citations": [
+          { "id": "teichman2006", "authors": "Teichman SL, et al.", "year": 2006, "title": "Prolonged stimulation of growth hormone (GH) and insulin-like growth factor I secretion by CJC-1295", "journal": "Journal of Clinical Endocrinology & Metabolism", "url": "https://pubmed.ncbi.nlm.nih.gov/16352683/" }
+        ]
+      },
+      "animal_models": {
+        "summary": "Synergistic GH release when combined with GHRP compounds (2–5× greater than either alone). Dual GHRH + ghrelin receptor pathway activation demonstrated. Dose-dependent IGF-1 increases in animal studies.",
+        "citations": [
+          { "id": "alba2008", "authors": "Alba M, et al.", "year": 2008, "title": "CJC-1295 combined with GHRP-6: Synergistic effects on growth hormone secretion", "journal": "Journal of Endocrinological Investigation", "url": "https://pubmed.ncbi.nlm.nih.gov/18787373/" }
+        ]
+      },
+      "performance": {
+        "summary": "Commonly combined with Ipamorelin in longevity and performance protocols. Extended GH/IGF-1 elevation from weekly dosing makes it convenient for sustained anabolic support. Theoretical improvements in body composition, recovery, and sleep. No controlled performance trials.",
+        "citations": []
+      }
+    },
+    "safety": {
+      "rating": 2,
+      "label": "Human PK data — limited safety profile",
+      "contraindications": ["Active malignancy", "Acromegaly", "Diabetic retinopathy"],
+      "adverse_events": "Injection site reactions, transient water retention, headache",
+      "regulatory": "Not FDA-approved. Human PK studies only."
+    },
+    "citations": [
+      { "id": "teichman2006", "authors": "Teichman SL, et al.", "year": 2006, "title": "Prolonged stimulation of GH and IGF-1 secretion by CJC-1295", "journal": "J Clin Endocrinol Metab", "url": "https://pubmed.ncbi.nlm.nih.gov/16352683/" },
+      { "id": "alba2008", "authors": "Alba M, et al.", "year": 2008, "title": "CJC-1295 combined with GHRP-6 synergistic effects", "journal": "J Endocrinological Investigation", "url": "https://pubmed.ncbi.nlm.nih.gov/18787373/" }
+    ],
+    "related": ["ipamorelin", "sermorelin", "ghrp-6", "tesamorelin"],
+    "last_updated": "2026-04-20"
+  },
+  {
+    "id": "semaglutide",
+    "slug": "semaglutide",
+    "names": {
+      "trade": "Ozempic / Wegovy / Rybelsus",
+      "scientific": "Semaglutide",
+      "proper": "Glucagon-Like Peptide-1 Receptor Agonist",
+      "aliases": ["GLP-1 agonist", "semaglutide", "NNC0113-0217"]
+    },
+    "sequence": {
+      "one_letter": "His-Aib-Glu-Gly-Thr-Phe-Thr-Ser-Asp-Val-Ser-Ser-Tyr-Leu-Glu-Gly-Gln-Ala-Ala-Lys...",
+      "three_letter": "His-Aib-Glu-Gly-Thr-Phe-Thr-Ser-Asp-Val-Ser-Ser-Tyr-Leu-Glu-Gly-Gln-Ala-Ala-Lys(C18 diacid)-Glu-Phe-Ile-Ala-Trp-Leu-Val-Arg-Gly-Arg-Gly",
+      "length": 31
+    },
+    "molecular": {
+      "formula": "C187H291N45O59",
+      "weight": 4113.58,
+      "cas": "910463-68-2",
+      "chemical_family": "GLP-1 analog",
+      "structure_class": "Modified linear peptide (lipidated)",
+      "solubility": "Water soluble with pH adjustment"
+    },
+    "pharmacokinetics": {
+      "half_life": "~7 days (168 hours)",
+      "half_life_short": "7 days",
+      "half_life_category": "long",
+      "bioavailability": { "SC": "~89%", "oral": "~1% (with SNAC enhancer)" },
+      "routes": ["SC", "oral"]
+    },
+    "dosing": [
+      { "route": "SC (Ozempic — T2D)", "dose": "0.25–2 mg", "frequency": "Once weekly", "notes": "Titrate up over months" },
+      { "route": "SC (Wegovy — obesity)", "dose": "0.25–2.4 mg", "frequency": "Once weekly", "notes": "17-month titration schedule" },
+      { "route": "Oral (Rybelsus)", "dose": "3–14 mg", "frequency": "Daily (fasted)", "notes": "SNAC absorption enhancer required" }
+    ],
+    "cascades": {
+      "metabolism": [
+        { "name": "cAMP/PKA Cascade", "detail": "GLP-1 receptor → Gs protein → adenylyl cyclase → cAMP elevation → PKA activation → glucose-dependent insulin secretion from beta cells." },
+        { "name": "Insulin Secretion (Glucose-Dependent)", "detail": "Stimulates insulin only in the presence of elevated glucose, minimizing hypoglycemia risk." },
+        { "name": "Glucagon Suppression", "detail": "Reduces glucagon secretion from alpha cells, lowering hepatic glucose output." }
+      ],
+      "energy_generation": [
+        { "name": "Gastric Emptying Delay", "detail": "Slowed gastric emptying reduces postprandial glucose spikes and promotes satiety via gut-brain axis." }
+      ],
+      "growth": [
+        { "name": "Beta-Cell Protection", "detail": "Reduces glucotoxicity and lipotoxicity in pancreatic beta cells, potentially preserving insulin-secreting capacity." }
+      ],
+      "proliferation": [],
+      "cancer": [
+        { "name": "Medullary Thyroid Carcinoma Risk (Rodent)", "detail": "C-cell hyperplasia and MTC observed in rodent studies at high doses. Human risk unclear; contraindicated in personal/family history of MTC or MEN2." }
+      ],
+      "central_dogma": [
+        { "name": "NASH Resolution", "detail": "Gene expression changes in hepatocytes reduce fat accumulation and inflammation. 59% NASH resolution at highest dose vs 17% placebo (Newsome et al. 2021)." }
+      ],
+      "immune_function": [
+        { "name": "Anti-inflammatory (Systemic)", "detail": "Reduces circulating inflammatory markers (CRP, IL-6) independent of weight loss effects." }
+      ],
+      "cytokines": [
+        { "name": "CRP ↓", "detail": "C-reactive protein reduction reflects reduced systemic inflammation." },
+        { "name": "IL-6 ↓", "detail": "Interleukin-6 reduction independent of weight loss." }
+      ]
+    },
+    "effects": {
+      "clinical_categories": ["Metabolic", "Cardiovascular", "GI / Gut Health"],
+      "clinical_effects": [
+        { "name": "Weight Loss", "subcategory": "Obesity", "evidence": "Extensive" },
+        { "name": "Glycemic Control", "subcategory": "Diabetes", "evidence": "Extensive" },
+        { "name": "MACE Reduction", "subcategory": "Cardiovascular", "evidence": "Extensive" },
+        { "name": "NASH Resolution", "subcategory": "Hepatic", "evidence": "Extensive" },
+        { "name": "Neuroprotection", "subcategory": "CNS", "evidence": "Preliminary" }
+      ],
+      "safety_rating": 1,
+      "safety_label": "FDA-approved",
+      "human_use": {
+        "summary": "FDA-approved for type 2 diabetes (Ozempic, 2017) and obesity (Wegovy, 2021). Average weight loss of 14.9% at 2.4 mg weekly in STEP 1 trial (N=1,961, 68 weeks) — approaching bariatric surgery outcomes. SUSTAIN-6 showed 26% MACE reduction in T2D patients. SELECT trial (N=17,604) showed 20% MACE reduction in non-diabetic obesity. NASH resolution in 59% of patients at highest dose. Oral formulation (Rybelsus) FDA-approved 2019.",
+        "citations": [
+          { "id": "wilding2021", "authors": "Wilding JPH, et al.", "year": 2021, "title": "Once-Weekly Semaglutide in Adults with Overweight or Obesity", "journal": "New England Journal of Medicine", "url": "https://pubmed.ncbi.nlm.nih.gov/33567185/" },
+          { "id": "marso2016", "authors": "Marso SP, et al.", "year": 2016, "title": "Semaglutide and Cardiovascular Outcomes in Patients with Type 2 Diabetes", "journal": "New England Journal of Medicine", "url": "https://pubmed.ncbi.nlm.nih.gov/27633186/" },
+          { "id": "newsome2021", "authors": "Newsome PN, et al.", "year": 2021, "title": "A Placebo-Controlled Trial of Subcutaneous Semaglutide in Nonalcoholic Steatohepatitis", "journal": "New England Journal of Medicine", "url": "https://pubmed.ncbi.nlm.nih.gov/33657293/" }
+        ]
+      },
+      "animal_models": {
+        "summary": "Rodent studies show improved cognitive function, reduced brain inflammation, and decreased amyloid-β accumulation. C-cell hyperplasia at high doses in rodents — basis for MTC contraindication. Dose-dependent weight loss and metabolic improvements across species.",
+        "citations": []
+      },
+      "performance": {
+        "summary": "Not primarily studied for performance enhancement. Weight loss (14.9% average) improves functional capacity and reduces obesity-related comorbidities. SELECT trial showed MACE reduction in people with obesity but without diabetes — relevant for longevity. Tirzepatide achieves ~47% greater weight loss in head-to-head comparisons.",
+        "citations": []
+      }
+    },
+    "safety": {
+      "rating": 1,
+      "label": "FDA-approved — extensive safety database",
+      "contraindications": ["Personal/family history of MTC", "MEN2 syndrome", "Pregnancy"],
+      "adverse_events": "Nausea (most common, usually resolves), vomiting, gallbladder disease, rare pancreatitis, rare gastroparesis",
+      "regulatory": "FDA-approved: Ozempic (2017, T2D), Rybelsus (2019, T2D oral), Wegovy (2021, obesity). EMA approved."
+    },
+    "citations": [
+      { "id": "wilding2021", "authors": "Wilding JPH, et al.", "year": 2021, "title": "Once-Weekly Semaglutide in Adults with Overweight or Obesity (STEP 1)", "journal": "NEJM", "url": "https://pubmed.ncbi.nlm.nih.gov/33567185/" },
+      { "id": "marso2016", "authors": "Marso SP, et al.", "year": 2016, "title": "Semaglutide and Cardiovascular Outcomes (SUSTAIN-6)", "journal": "NEJM", "url": "https://pubmed.ncbi.nlm.nih.gov/27633186/" },
+      { "id": "newsome2021", "authors": "Newsome PN, et al.", "year": 2021, "title": "Semaglutide in Nonalcoholic Steatohepatitis (NASH trial)", "journal": "NEJM", "url": "https://pubmed.ncbi.nlm.nih.gov/33657293/" }
+    ],
+    "related": ["tirzepatide", "liraglutide", "retatrutide"],
+    "last_updated": "2026-04-20"
+  },
+  {
+    "id": "semax",
+    "slug": "semax",
+    "names": {
+      "trade": "Semax",
+      "scientific": "ACTH 4-10 Analog",
+      "proper": "Semax Acetate",
+      "aliases": ["Semax", "ACTH(4-10) Pro-Gly-Pro analog", "80714-61-0"]
+    },
+    "sequence": {
+      "one_letter": "MEHFPGP",
+      "three_letter": "Met-Glu-His-Phe-Pro-Gly-Pro",
+      "length": 7
+    },
+    "molecular": {
+      "formula": "C37H51N9O10S",
+      "weight": 813.93,
+      "cas": "80714-61-0",
+      "chemical_family": "Nootropic peptide",
+      "structure_class": "Linear heptapeptide",
+      "solubility": "Water soluble"
+    },
+    "pharmacokinetics": {
+      "half_life": "Minutes in serum; CNS effects persist longer",
+      "half_life_short": "<10 min (serum)",
+      "half_life_category": "ultra-short",
+      "bioavailability": { "intranasal": "high (olfactory/trigeminal BBB penetration)", "SC": "lower CNS bioavailability" },
+      "routes": ["intranasal", "SC"]
+    },
+    "dosing": [
+      { "route": "Intranasal", "dose": "200–600 mcg/day", "frequency": "1–2× daily", "notes": "Primary clinical route; direct BBB access" },
+      { "route": "Subcutaneous", "dose": "50–300 mcg/day", "frequency": "Once daily", "notes": "Lower CNS bioavailability" }
+    ],
+    "cascades": {
+      "metabolism": [],
+      "energy_generation": [
+        { "name": "Neuronal Metabolism", "detail": "Enhances cerebral metabolic rate and neuronal energy efficiency through BDNF-mediated mitochondrial optimization." }
+      ],
+      "growth": [
+        { "name": "BDNF Upregulation", "detail": "Elevates brain-derived neurotrophic factor expression in hippocampus, cortex, and basal forebrain. Supports neurogenesis, synaptic plasticity, and long-term potentiation." },
+        { "name": "NGF Upregulation", "detail": "Nerve growth factor elevation supports cholinergic neuron maintenance and peripheral nerve health." }
+      ],
+      "proliferation": [
+        { "name": "Neurogenesis Support", "detail": "BDNF-driven neurogenesis in hippocampal dentate gyrus supports new neuron formation and memory consolidation." }
+      ],
+      "cancer": [],
+      "central_dogma": [
+        { "name": "Gene Expression Modification", "detail": "Modulates hundreds of genes related to neuronal plasticity, neuroprotection, and synaptic function. Stavchansky et al. (2011) identified immune response gene regulation via microarray." }
+      ],
+      "immune_function": [
+        { "name": "Immunomodulatory", "detail": "Anti-inflammatory and antioxidant effects in CNS tissue. Reduces oxidative stress markers in brain. Regulates immune response genes." }
+      ],
+      "cytokines": []
+    },
+    "effects": {
+      "clinical_categories": ["Cognitive Enhancement", "Neuroprotection", "Recovery & Repair"],
+      "clinical_effects": [
+        { "name": "Cognitive Enhancement", "subcategory": "Memory & Learning", "evidence": "Extensive" },
+        { "name": "Neuroprotection", "subcategory": "CNS", "evidence": "Extensive" },
+        { "name": "Stroke Recovery", "subcategory": "Neurology", "evidence": "Moderate" },
+        { "name": "Anxiolytic", "subcategory": "Psychiatry", "evidence": "Moderate" },
+        { "name": "Neuroregeneration", "subcategory": "CNS", "evidence": "Moderate" }
+      ],
+      "safety_rating": 2,
+      "safety_label": "Approved in Russia/Ukraine — no FDA/EMA approval",
+      "human_use": {
+        "summary": "Approved in Russia since 1994 and Ukraine for ischemic stroke treatment, cognitive impairment, optic nerve atrophy, and attention deficit disorders. Gusev et al. (2006) demonstrated improved neurological outcomes in acute ischemic stroke patients. Used clinically in Eastern Europe; not available in Western markets except as research compound.",
+        "citations": [
+          { "id": "gusev2006", "authors": "Gusev EI, et al.", "year": 2006, "title": "Semax in the treatment of patients with acute ischemic stroke", "journal": "Zhurnal Nevrologii i Psikhiatrii", "url": "https://www.ncbi.nlm.nih.gov/pubmed/16929773" }
+        ]
+      },
+      "animal_models": {
+        "summary": "Extensive rodent data. Memory and learning improvements in multiple models. Stroke damage reduction and motor recovery. BDNF and NGF upregulation confirmed in hippocampus, cortex, and basal forebrain. Dopaminergic and serotonergic pathway activation via microdialysis analysis. Anxiolytic effects without sedation or dependence potential.",
+        "citations": [
+          { "id": "eremin2005", "authors": "Eremin KO, et al.", "year": 2005, "title": "Semax, an ACTH(4-10) analogue with nootropic properties, activates dopaminergic and serotoninergic brain systems", "journal": "Neurochemical Research", "url": "https://pubmed.ncbi.nlm.nih.gov/16180128/" }
+        ]
+      },
+      "performance": {
+        "summary": "Used as a nootropic for cognitive performance, memory formation, attention, and executive function. Biohacking community reports improved focus and stress resilience. No controlled human performance studies. Russian clinical approval provides indirect evidence for cognitive efficacy in pathological states.",
+        "citations": []
+      }
+    },
+    "safety": {
+      "rating": 2,
+      "label": "Clinically approved in Russia/Ukraine; no FDA/EMA data",
+      "contraindications": [],
+      "adverse_events": "Generally well-tolerated; nasal irritation from intranasal route",
+      "regulatory": "Approved Russia (1994), Ukraine. Not FDA/EMA approved."
+    },
+    "citations": [
+      { "id": "eremin2005", "authors": "Eremin KO, et al.", "year": 2005, "title": "Semax activates dopaminergic and serotoninergic brain systems", "journal": "Neurochemical Research", "url": "https://pubmed.ncbi.nlm.nih.gov/16180128/" },
+      { "id": "stavchansky2011", "authors": "Stavchansky VV, et al.", "year": 2011, "title": "Semax regulates expression of immune response genes", "journal": "Molecular Genetics and Metabolism", "url": "https://pubmed.ncbi.nlm.nih.gov/21353611/" },
+      { "id": "gusev2006", "authors": "Gusev EI, et al.", "year": 2006, "title": "Semax in treatment of acute ischemic stroke", "journal": "Zhurnal Nevrologii i Psikhiatrii", "url": "https://www.ncbi.nlm.nih.gov/pubmed/16929773" }
+    ],
+    "related": ["selank", "dihexa", "cerebrolysin"],
+    "last_updated": "2026-04-20"
+  },
+  {
+    "id": "ghk-cu",
+    "slug": "ghk-cu",
+    "names": {
+      "trade": "GHK-Cu",
+      "scientific": "Copper Tripeptide-1",
+      "proper": "Glycyl-L-histidyl-L-lysine copper(II) complex",
+      "aliases": ["Copper Peptide", "GHK-Copper", "Copper Tripeptide"]
+    },
+    "sequence": {
+      "one_letter": "GHK",
+      "three_letter": "Gly-His-Lys",
+      "length": 3
+    },
+    "molecular": {
+      "formula": "C14H23CuN6O4",
+      "weight": 403.92,
+      "cas": "49557-75-7",
+      "chemical_family": "Copper chelating peptide",
+      "structure_class": "Tripeptide-metal complex",
+      "solubility": "Water-soluble; protect from light"
+    },
+    "pharmacokinetics": {
+      "half_life": "SC ~105 min; topical — sustained tissue retention",
+      "half_life_short": "~105 min (SC)",
+      "half_life_category": "short",
+      "bioavailability": { "SC": "moderate", "topical": "slow, sustained absorption" },
+      "routes": ["topical", "SC"]
+    },
+    "dosing": [
+      { "route": "Topical", "dose": "1–5% concentration", "frequency": "1–2× daily", "notes": "Primary studied route for skin/wound healing" },
+      { "route": "Subcutaneous", "dose": "1–5 mg", "frequency": "1–3× weekly", "notes": "Systemic regenerative protocols" }
+    ],
+    "cascades": {
+      "metabolism": [
+        { "name": "Antioxidant Enzyme Activation", "detail": "Activates superoxide dismutase (SOD), catalase, and glutathione peroxidase — 2–4 fold increases. Reduces lipid peroxidation and DNA oxidation." }
+      ],
+      "energy_generation": [
+        { "name": "Cytochrome C Oxidase", "detail": "Copper ion essential for Complex IV (cytochrome c oxidase) activity — the final step of mitochondrial electron transport chain, directly powering ATP synthesis." }
+      ],
+      "growth": [
+        { "name": "Collagen Synthesis", "detail": "Lysyl oxidase activation (copper-dependent) crosslinks collagen and elastin. 70–200% increase in collagen types I, III, and elastin in human dermal fibroblasts." },
+        { "name": "Hair Follicle Enlargement", "detail": "Dermal papilla cell proliferation, extended anagen phase, reduced DHT-mediated follicle miniaturization." }
+      ],
+      "proliferation": [
+        { "name": "Angiogenesis", "detail": "Promotes blood vessel formation in wound beds — increased capillary density enhances nutrient delivery to healing tissue." }
+      ],
+      "cancer": [
+        { "name": "Metastatic Gene Suppression", "detail": "Connectivity Map analysis (Pickart 2012): suppresses 54 genes associated with the metastatic phenotype. 32% of human genome affected by GHK-Cu gene modulation." }
+      ],
+      "central_dogma": [
+        { "name": "Broad Gene Expression Modulation", "detail": "Affects 4,128 genes (~32% of human genome). Suppresses genes associated with inflammation, oxidative stress, and metastasis. Activates tissue repair, collagen synthesis, and cell survival genes." }
+      ],
+      "immune_function": [
+        { "name": "NF-κB Suppression", "detail": "Inhibits NF-κB pathway activation, reducing transcription of pro-inflammatory genes." }
+      ],
+      "cytokines": [
+        { "name": "IL-6 ↓", "detail": "Interleukin-6 reduction in dermal and systemic contexts." },
+        { "name": "TNF-α ↓", "detail": "Tumor necrosis factor alpha suppression via NF-κB inhibition." },
+        { "name": "IL-1β ↓", "detail": "Interleukin-1 beta reduction in inflammatory skin models." }
+      ]
+    },
+    "effects": {
+      "clinical_categories": ["Anti-Aging", "Wound Healing", "Skin Health"],
+      "clinical_effects": [
+        { "name": "Collagen Synthesis", "subcategory": "Skin", "evidence": "Extensive" },
+        { "name": "Wound Healing", "subcategory": "Dermatology", "evidence": "Extensive" },
+        { "name": "Anti-aging (Skin)", "subcategory": "Skin", "evidence": "Moderate" },
+        { "name": "Antioxidant", "subcategory": "Systemic", "evidence": "Moderate" },
+        { "name": "Hair Follicle", "subcategory": "Dermatology", "evidence": "Moderate" },
+        { "name": "Anti-metastatic", "subcategory": "Cancer Biology", "evidence": "Preliminary" }
+      ],
+      "safety_rating": 2,
+      "safety_label": "Clinical trial data available (topical)",
+      "human_use": {
+        "summary": "Double-blind, placebo-controlled 12-week trial (Abdulghani et al. 1998, n=71 women aged 50–70): 55% reduction in fine line depth, measurable increases in skin thickness and density via ultrasound imaging, enhanced procollagen I and III expression. Multiple smaller human studies confirm topical safety and tolerability. No systemic human trials for subcutaneous route.",
+        "citations": [
+          { "id": "abdulghani1998", "authors": "Abdulghani AA, et al.", "year": 1998, "title": "GHK-Cu peptide: double-blind clinical trial for skin aging", "journal": "J American Academy of Dermatology", "url": "https://pubmed.ncbi.nlm.nih.gov/9587407/" }
+        ]
+      },
+      "animal_models": {
+        "summary": "Wound contraction accelerated ~30% vs controls (Maquart et al. 1988). Increased capillary density in wound beds. Improved collagen organization. Hair follicle stimulation with density and regrowth improvements. Anti-fibrotic effects via TGF-beta modulation.",
+        "citations": [
+          { "id": "maquart1988", "authors": "Maquart FX, et al.", "year": 1988, "title": "Stimulation of collagen synthesis in fibroblast cultures by the tripeptide-copper complex glycyl-L-histidyl-L-lysine-Cu2+", "journal": "FEBS Letters", "url": "https://pubmed.ncbi.nlm.nih.gov/3402554/" }
+        ]
+      },
+      "performance": {
+        "summary": "Widely used in topical skincare for anti-aging. Systemic use in longevity protocols for collagen support, antioxidant defense, and hair health. The broad gene expression modulation (~32% of genome) is notable but requires further mechanistic characterization.",
+        "citations": [
+          { "id": "pickart2012", "authors": "Pickart L, et al.", "year": 2012, "title": "GHK-Cu and gene expression modulation", "journal": "Biochimie", "url": "https://pubmed.ncbi.nlm.nih.gov/22609831/" }
+        ]
+      }
+    },
+    "safety": {
+      "rating": 2,
+      "label": "Clinical topical data — systemic use less studied",
+      "contraindications": ["Copper metabolism disorders (Wilson's disease)", "Pregnancy (caution)"],
+      "adverse_events": "Mild skin irritation at high topical concentrations; generally well-tolerated",
+      "regulatory": "Topical ingredient approved in cosmetics (EU, US). No systemic regulatory approval."
+    },
+    "citations": [
+      { "id": "pickart2015", "authors": "Pickart L, Margolina A.", "year": 2015, "title": "Regenerative and Protective Actions of the GHK-Cu Peptide in the Light of the New Gene Data", "journal": "BioMed Research International", "url": "https://pubmed.ncbi.nlm.nih.gov/26236693/" },
+      { "id": "pickart2012", "authors": "Pickart L, et al.", "year": 2012, "title": "GHK-Cu affects 4,128 genes including metastatic suppression", "journal": "Biochimie", "url": "https://pubmed.ncbi.nlm.nih.gov/22609831/" },
+      { "id": "abdulghani1998", "authors": "Abdulghani AA, et al.", "year": 1998, "title": "GHK-Cu skin aging clinical trial", "journal": "J American Academy of Dermatology", "url": "https://pubmed.ncbi.nlm.nih.gov/9587407/" },
+      { "id": "maquart1988", "authors": "Maquart FX, et al.", "year": 1988, "title": "Wound contraction acceleration by GHK-Cu", "journal": "FEBS Letters", "url": "https://pubmed.ncbi.nlm.nih.gov/3402554/" }
+    ],
+    "related": ["bpc-157", "tb-500", "epithalon"],
+    "last_updated": "2026-04-20"
+  },
+  {
+    "id": "epithalon",
+    "slug": "epithalon",
+    "names": {
+      "trade": "Epithalon",
+      "scientific": "Epitalon / Epithalone",
+      "proper": "Ala-Glu-Asp-Gly (AGAG)",
+      "aliases": ["Epitalon", "Epithalone", "AGAG tetrapeptide"]
+    },
+    "sequence": {
+      "one_letter": "AEDG",
+      "three_letter": "Ala-Glu-Asp-Gly",
+      "length": 4
+    },
+    "molecular": {
+      "formula": "C14H22N4O9",
+      "weight": 390.35,
+      "cas": "307297-39-8",
+      "chemical_family": "Pineal peptide bioregulator",
+      "structure_class": "Tetrapeptide",
+      "solubility": "Water-soluble"
+    },
+    "pharmacokinetics": {
+      "half_life": "Minutes in plasma (peptidase activity)",
+      "half_life_short": "<10 min",
+      "half_life_category": "ultra-short",
+      "bioavailability": { "SC": "moderate", "IV": "complete" },
+      "routes": ["SC", "IV", "intranasal"]
+    },
+    "dosing": [
+      { "route": "Subcutaneous", "dose": "5–10 mg/day", "frequency": "10–20 days cyclical", "notes": "Most common in Russian studies" },
+      { "route": "Intravenous", "dose": "10 mg/day", "frequency": "10 days", "notes": "Some longevity protocols" }
+    ],
+    "cascades": {
+      "metabolism": [
+        { "name": "Antioxidant Enhancement", "detail": "Upregulates SOD, catalase, and glutathione peroxidase. 25–40% reduction in lipid peroxidation and protein carbonyls." }
+      ],
+      "energy_generation": [
+        { "name": "Mitochondrial Function", "detail": "Improved mitochondrial efficiency and reduced ROS production. Enhanced cellular energy metabolism in aging tissues." }
+      ],
+      "growth": [],
+      "proliferation": [
+        { "name": "Telomere Lengthening", "detail": "Telomerase activation leads to ~33% longer telomeres in treated fibroblasts. Overcomes Hayflick limit in cultured human cells." }
+      ],
+      "cancer": [
+        { "name": "Tumor Suppression (Animal)", "detail": "Delayed tumor onset in rodent longevity models. Reduced all-cause mortality in elderly observational studies." }
+      ],
+      "central_dogma": [
+        { "name": "Telomerase/TERT Epigenetic Activation", "detail": "2–3 fold increases in telomerase expression via histone acetylation at TERT promoter. First reported mechanism for peptide-induced telomerase activation in human somatic cells (Khavinson 2003)." }
+      ],
+      "immune_function": [
+        { "name": "Thymic Function Restoration", "detail": "Restores CD4+/CD8+ T-cell populations in aging models. Improves adaptive immune response capacity." }
+      ],
+      "cytokines": []
+    },
+    "effects": {
+      "clinical_categories": ["Anti-Aging", "Longevity", "Immune Support"],
+      "clinical_effects": [
+        { "name": "Telomerase Activation", "subcategory": "Aging Biology", "evidence": "Moderate" },
+        { "name": "Lifespan Extension", "subcategory": "Longevity", "evidence": "Moderate" },
+        { "name": "Melatonin Restoration", "subcategory": "Endocrine", "evidence": "Moderate" },
+        { "name": "Antioxidant", "subcategory": "Systemic", "evidence": "Moderate" },
+        { "name": "Immune Restoration", "subcategory": "Immune", "evidence": "Preliminary" }
+      ],
+      "safety_rating": 3,
+      "safety_label": "Animal/in vitro — no independent human trials",
+      "human_use": {
+        "summary": "No independent Western peer-reviewed human clinical trials published. Khavinson's group (St. Petersburg) has published observational data suggesting reduced all-cause mortality in elderly subjects receiving periodic courses, but these studies have not been independently replicated. The majority of published research comes from a single laboratory, limiting evidence quality.",
+        "citations": [
+          { "id": "khavinson2001", "authors": "Khavinson VKh, Malinin VV.", "year": 2001, "title": "Peptide bioregulation of aging: results and prospects", "journal": "Bulletin of Experimental Biology and Medicine", "url": "https://pubmed.ncbi.nlm.nih.gov/11586269/" }
+        ]
+      },
+      "animal_models": {
+        "summary": "Mouse: 10–25% lifespan extension. Drosophila: 11–16% median survival increase. Delayed tumor onset and immune decline. 2.4-fold increase in telomerase activity in human fibroblasts (in vitro). Restores nocturnal melatonin to youthful levels (+50–100%). Reduces pineal gland lipofuscin accumulation.",
+        "citations": [
+          { "id": "khavinson2003", "authors": "Khavinson VKh, et al.", "year": 2003, "title": "Epithalon peptide induces telomerase activity and telomere elongation in human somatic cells", "journal": "Bulletin of Experimental Biology and Medicine", "url": "https://pubmed.ncbi.nlm.nih.gov/12937682/" },
+          { "id": "khavinson2000", "authors": "Khavinson VKh, Izmaylov DM.", "year": 2000, "title": "Effect of Epithalon on aging and lifespan in Drosophila", "journal": "Mechanisms of Ageing and Development", "url": "https://pubmed.ncbi.nlm.nih.gov/10719061/" }
+        ]
+      },
+      "performance": {
+        "summary": "Used in longevity protocols for its theoretical anti-aging properties: telomere preservation, melatonin restoration, antioxidant enhancement. Popular in biohacking communities. Evidence quality is limited by single-lab origin and lack of independent replication.",
+        "citations": []
+      }
+    },
+    "safety": {
+      "rating": 3,
+      "label": "Preclinical — limited safety profile",
+      "contraindications": [],
+      "adverse_events": "No serious adverse events reported in published studies",
+      "regulatory": "Not approved for human use. Research compound."
+    },
+    "citations": [
+      { "id": "khavinson2001", "authors": "Khavinson VKh, Malinin VV.", "year": 2001, "title": "Peptide bioregulation of aging", "journal": "Bull Exp Biol Med", "url": "https://pubmed.ncbi.nlm.nih.gov/11586269/" },
+      { "id": "khavinson2003", "authors": "Khavinson VKh, et al.", "year": 2003, "title": "Epithalon induces telomerase activity in human somatic cells", "journal": "Bull Exp Biol Med", "url": "https://pubmed.ncbi.nlm.nih.gov/12937682/" },
+      { "id": "khavinson2000", "authors": "Khavinson VKh, Izmaylov DM.", "year": 2000, "title": "Effect of Epithalon on aging in Drosophila", "journal": "Mech Ageing Dev", "url": "https://pubmed.ncbi.nlm.nih.gov/10719061/" }
+    ],
+    "related": ["ghk-cu", "thymosin-alpha-1", "thymulin"],
+    "last_updated": "2026-04-20"
+  },
+  {
+    "id": "pt-141",
+    "slug": "pt-141",
+    "names": {
+      "trade": "Vyleesi",
+      "scientific": "Bremelanotide",
+      "proper": "PT-141",
+      "aliases": ["PT141", "Bremelanotide acetate"]
+    },
+    "sequence": {
+      "one_letter": "Ac-Nle-cyclo(Asp-His-D-Phe-Arg-Trp-Lys)-OH",
+      "three_letter": "Ac-Nle-cyclo(Asp-His-D-Phe-Arg-Trp-Lys)-OH",
+      "length": 7
+    },
+    "molecular": {
+      "formula": "C50H68N14O10",
+      "weight": 1025.18,
+      "cas": "189691-06-3",
+      "chemical_family": "Melanocortin peptide",
+      "structure_class": "Cyclic heptapeptide",
+      "solubility": "Water-soluble"
+    },
+    "pharmacokinetics": {
+      "half_life": "2.7 hours",
+      "half_life_short": "2.7 h",
+      "half_life_category": "short",
+      "bioavailability": { "SC": "high" },
+      "routes": ["SC"]
+    },
+    "dosing": [
+      { "route": "Subcutaneous (FDA-approved)", "dose": "1.75 mg", "frequency": "As needed, ≥45 min before; max 1x/24h, 8x/month", "notes": "HSDD in premenopausal women" },
+      { "route": "Subcutaneous (Research)", "dose": "0.5–2 mg", "frequency": "As needed", "notes": "Off-label research range" }
+    ],
+    "cascades": {
+      "metabolism": [],
+      "energy_generation": [],
+      "growth": [],
+      "proliferation": [],
+      "cancer": [],
+      "central_dogma": [
+        { "name": "MC3R/MC4R Hypothalamic Activation", "detail": "Agonist at melanocortin MC3R and MC4R receptors in hypothalamus and limbic system. cAMP → PKA cascade activates neuronal circuits governing sexual desire — mechanism independent of vascular effects." }
+      ],
+      "immune_function": [],
+      "cytokines": [
+        { "name": "Oxytocin Release", "detail": "MC4R activation in paraventricular nucleus (PVN) of hypothalamus triggers oxytocin release — the 'bonding' neuropeptide — contributing to arousal and desire." }
+      ]
+    },
+    "effects": {
+      "clinical_categories": ["Sexual Medicine", "Neuroscience"],
+      "clinical_effects": [
+        { "name": "HSDD Treatment", "subcategory": "Sexual Medicine", "evidence": "Extensive" },
+        { "name": "Sexual Desire", "subcategory": "Sexual Medicine", "evidence": "Extensive" },
+        { "name": "Erectile Function (Male)", "subcategory": "Sexual Medicine", "evidence": "Moderate" },
+        { "name": "Central Arousal", "subcategory": "Neuroscience", "evidence": "Moderate" }
+      ],
+      "safety_rating": 1,
+      "safety_label": "FDA-approved (2019)",
+      "human_use": {
+        "summary": "FDA-approved June 2019 for hypoactive sexual desire disorder (HSDD) in premenopausal women — the first subcutaneous HSDD treatment. RECONNECT Phase 3 trials (N>1,200) showed statistically significant increases in satisfying sexual events (SSEs) and reductions in distress related to low desire. Primary adverse effects: nausea (40%), flushing (20%), transient +6 mmHg systolic BP.",
+        "citations": [
+          { "id": "kingsberg2019", "authors": "Kingsberg SA, et al.", "year": 2019, "title": "Bremelanotide for Hypoactive Sexual Desire Disorder in Premenopausal Women: A Randomized, Placebo-Controlled Dose-Finding Trial", "journal": "Obstetrics & Gynecology", "url": "https://pubmed.ncbi.nlm.nih.gov/31149999/" }
+        ]
+      },
+      "animal_models": {
+        "summary": "Early animal studies identified the central (non-vascular) mechanism of action — distinct from PDE5 inhibitors. MC3R/MC4R activation in hypothalamus and limbic system mediates sexual behavior in rodent and primate models. Oxytocin release from PVN confirmed in animal studies.",
+        "citations": [
+          { "id": "vanderploeg2002", "authors": "Van der Ploeg LH, et al.", "year": 2002, "title": "A role for the melanocortin 4 receptor in sexual function", "journal": "Current Opinion in Pharmacology", "url": "https://pubmed.ncbi.nlm.nih.gov/11741017/" }
+        ]
+      },
+      "performance": {
+        "summary": "Primarily indicated for sexual function. Early Phase 1/2 male studies showed significant erectile response at 4–6 mg through CNS pathways (Wessells et al. 2005). Neuroimaging shows increased activity in anterior cingulate cortex and insula — brain regions associated with desire and motivation.",
+        "citations": [
+          { "id": "wessells2005", "authors": "Wessells H, et al.", "year": 2005, "title": "PT-141: a melanocortin agonist for the treatment of sexual dysfunction", "journal": "Annals NY Academy of Sciences", "url": "https://pubmed.ncbi.nlm.nih.gov/15981576/" }
+        ]
+      }
+    },
+    "safety": {
+      "rating": 1,
+      "label": "FDA-approved — Phase 3 safety database",
+      "contraindications": ["Cardiovascular disease (BP elevation)", "Concurrent antihypertensives (use with caution)"],
+      "adverse_events": "Nausea 40%, flushing 20%, transient hypertension +6 mmHg systolic, focal hyperpigmentation with prolonged use",
+      "regulatory": "FDA-approved June 2019 (HSDD in premenopausal women). Brand: Vyleesi."
+    },
+    "citations": [
+      { "id": "kingsberg2019", "authors": "Kingsberg SA, et al.", "year": 2019, "title": "Bremelanotide for HSDD — RECONNECT trials", "journal": "Obstetrics & Gynecology", "url": "https://pubmed.ncbi.nlm.nih.gov/31149999/" },
+      { "id": "wessells2005", "authors": "Wessells H, et al.", "year": 2005, "title": "PT-141 melanocortin agonist for sexual dysfunction", "journal": "Ann NY Acad Sci", "url": "https://pubmed.ncbi.nlm.nih.gov/15981576/" },
+      { "id": "vanderploeg2002", "authors": "Van der Ploeg LH, et al.", "year": 2002, "title": "Melanocortin 4 receptor role in sexual function", "journal": "Curr Opin Pharmacol", "url": "https://pubmed.ncbi.nlm.nih.gov/11741017/" }
+    ],
+    "related": ["melanotan-ii", "selank"],
+    "last_updated": "2026-04-20"
+  }
+]
