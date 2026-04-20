@@ -1352,6 +1352,65 @@ footer {
   font-family: var(--mono);
   cursor: default;
 }
+
+/* ═══════════════════════════════════════════════
+   INLINE CITATION TOOLTIPS
+═══════════════════════════════════════════════ */
+.cite-ref {
+  cursor: pointer;
+  border-bottom: 1px dashed #2e2e2e;
+  transition: border-color 0.15s;
+}
+.cite-ref:hover { border-bottom-color: var(--accent-blue); }
+.cite-sup {
+  font-size: 0.52rem;
+  color: var(--accent-blue);
+  vertical-align: super;
+  line-height: 0;
+  margin-left: 2px;
+  font-family: var(--mono);
+  opacity: 0.7;
+}
+.cite-ref:hover .cite-sup { opacity: 1; }
+#cite-tooltip {
+  display: none;
+  position: fixed;
+  z-index: 3000;
+  max-width: 300px;
+  min-width: 200px;
+  background: #0d0d0d;
+  border: 1px solid #2a2a2a;
+  border-radius: var(--radius);
+  padding: 0.8rem 1rem;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.9);
+}
+#cite-tooltip.open { display: block; }
+.ct-claim {
+  font-size: 0.72rem;
+  color: var(--text-primary);
+  line-height: 1.45;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+.ct-authors { font-size: 0.62rem; color: var(--text-secondary); margin-bottom: 0.12rem; }
+.ct-title { font-size: 0.6rem; color: #444; margin-bottom: 0.45rem; line-height: 1.4; }
+.ct-link {
+  font-size: 0.62rem;
+  color: var(--accent-blue);
+  text-decoration: none;
+  display: inline-block;
+}
+.ct-link:hover { text-decoration: underline; }
+.ct-arrow {
+  position: absolute;
+  width: 8px; height: 8px;
+  background: #0d0d0d;
+  border-left: 1px solid #2a2a2a;
+  border-top: 1px solid #2a2a2a;
+  transform: rotate(45deg);
+  top: -5px;
+  left: 16px;
+}
 </style>
 </head>
 <body>
@@ -2802,6 +2861,73 @@ function updateAuthUI() {
 
 
 /* ═══════════════════════════════════════════════
+   INLINE CITATION TOOLTIP SYSTEM
+═══════════════════════════════════════════════ */
+function citeRef(value, citation, claim) {
+  if (!citation || !citation.authors) return value;
+  const payload = JSON.stringify({ claim, authors: citation.authors, year: citation.year, title: citation.title || '', url: citation.url || '' })
+    .replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  return `<span class="cite-ref" data-cite="${payload}">${value}<sup class="cite-sup">†</sup></span>`;
+}
+
+(function() {
+  const tt = document.getElementById('cite-tooltip');
+  const arrow = document.getElementById('ct-arrow');
+  let hideTimer;
+
+  function show(el) {
+    clearTimeout(hideTimer);
+    let data;
+    try { data = JSON.parse(el.dataset.cite); } catch(e) { return; }
+    tt.innerHTML = `<div class="ct-arrow" id="ct-arrow"></div>
+      <div class="ct-claim">"${data.claim}"</div>
+      <div class="ct-authors">${data.authors} (${data.year})</div>
+      ${data.title ? `<div class="ct-title">${data.title}</div>` : ''}
+      ${data.url ? `<a class="ct-link" href="${data.url}" target="_blank" onclick="event.stopPropagation()">View source →</a>` : ''}`;
+
+    tt.style.display = 'block';
+    const rect = el.getBoundingClientRect();
+    const ttW = 300, ttH = tt.offsetHeight;
+    let left = rect.left;
+    let top = rect.bottom + 10;
+    if (left + ttW > window.innerWidth - 12) left = window.innerWidth - ttW - 12;
+    if (left < 8) left = 8;
+    if (top + ttH > window.innerHeight - 12) top = rect.top - ttH - 10;
+    tt.style.left = left + 'px';
+    tt.style.top = top + 'px';
+    const arrowLeft = Math.max(8, Math.min(rect.left + rect.width/2 - left - 4, ttW - 20));
+    tt.querySelector('.ct-arrow').style.left = arrowLeft + 'px';
+    tt.classList.add('open');
+  }
+
+  function hide() {
+    hideTimer = setTimeout(() => tt.classList.remove('open'), 120);
+  }
+
+  document.addEventListener('mouseover', e => {
+    const ref = e.target.closest('.cite-ref');
+    if (ref) show(ref);
+  });
+  document.addEventListener('mouseout', e => {
+    const ref = e.target.closest('.cite-ref');
+    if (ref && !ref.contains(e.relatedTarget)) hide();
+  });
+  tt.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+  tt.addEventListener('mouseleave', hide);
+
+  document.addEventListener('click', e => {
+    const ref = e.target.closest('.cite-ref');
+    if (ref) {
+      e.stopPropagation();
+      if (tt.classList.contains('open')) { tt.classList.remove('open'); return; }
+      show(ref);
+    } else if (!e.target.closest('#cite-tooltip')) {
+      tt.classList.remove('open');
+    }
+  });
+})();
+
+/* ═══════════════════════════════════════════════
    BUILD DETAIL HTML (used by modal)
 ═══════════════════════════════════════════════ */
 function buildDetailHTML(p) {
@@ -2844,6 +2970,18 @@ function buildDetailHTML(p) {
   ).join('');
 
   const formula = p.molecular.formula.replace(/(\d+)/g, '<sub>$1</sub>');
+
+  // Citation helpers — find best match per domain, fall back to first
+  const allCites = p.citations || [];
+  const c0 = allCites[0];
+  const pkCite = allCites.find(c => /pharmacokinetic|half.?life|absorption/i.test(c.title||'')) || c0;
+  const mwCite = allCites.find(c => /molecular|structure|characteriz/i.test(c.title||'')) || c0;
+  const safetyCite = allCites.find(c => /safe|tolerab|adverse|toxicol/i.test(c.title||'')) || allCites[allCites.length-1] || c0;
+  const dosingCite = allCites.find(c => /dos|phase|trial|protocol/i.test(c.title||'')) || c0;
+  const humanCites = human.citations || [];
+  const hc0 = humanCites[0];
+  const animalCites = animal.citations || [];
+  const ac0 = animalCites[0];
 
   const vsData = VENDOR_SAFETY.peptides[p.id];
   let vendorHTML;
@@ -2892,9 +3030,9 @@ function buildDetailHTML(p) {
     <div class="detail-section"><div class="detail-title">Molecular Profile</div>
       <div class="names-grid">
         <span class="names-key">Formula</span><span class="names-val" style="font-family:var(--mono);font-size:0.8rem">${formula}</span>
-        <span class="names-key">MW</span><span class="names-val" style="font-family:var(--mono)">${p.molecular.weight.toLocaleString()} g/mol</span>
-        <span class="names-key">Structure</span><span class="names-val">${p.molecular.structure_class}</span>
-        <span class="names-key">Solubility</span><span class="names-val">${p.molecular.solubility}</span>
+        <span class="names-key">MW</span><span class="names-val" style="font-family:var(--mono)">${citeRef(p.molecular.weight.toLocaleString()+' g/mol', mwCite, 'Molecular weight of '+p.names.trade+' ('+p.names.proper+')')}</span>
+        <span class="names-key">Structure</span><span class="names-val">${citeRef(p.molecular.structure_class, mwCite, 'Structural classification of '+p.names.trade)}</span>
+        <span class="names-key">Solubility</span><span class="names-val">${citeRef(p.molecular.solubility, mwCite, 'Solubility profile of '+p.names.trade)}</span>
       </div>
       <div style="margin-top:0.75rem"><div class="seq-label" style="display:block;margin-bottom:0.3rem">Three-Letter Sequence</div>
         <div style="font-family:var(--mono);font-size:0.72rem;color:var(--text-secondary);word-break:break-all;line-height:1.6">${p.sequence.three_letter}</div>
@@ -2902,18 +3040,27 @@ function buildDetailHTML(p) {
     </div>
     <div class="detail-section"><div class="detail-title">Pharmacokinetics</div>
       <div class="names-grid">
-        <span class="names-key">Half-Life</span><span class="names-val" style="font-family:var(--mono)">${p.pharmacokinetics.half_life}</span>
-        <span class="names-key">Routes</span><span class="names-val">${(p.pharmacokinetics.routes||[]).join(', ')}</span>
-        ${Object.entries(p.pharmacokinetics.bioavailability||{}).map(([k,v]) => `<span class="names-key">BA (${k})</span><span class="names-val">${v}</span>`).join('')}
+        <span class="names-key">Half-Life</span><span class="names-val" style="font-family:var(--mono)">${citeRef(p.pharmacokinetics.half_life, pkCite, 'Reported half-life of '+p.names.trade+' via primary administration route')}</span>
+        <span class="names-key">Routes</span><span class="names-val">${citeRef((p.pharmacokinetics.routes||[]).join(', '), pkCite, 'Administration routes studied for '+p.names.trade)}</span>
+        ${Object.entries(p.pharmacokinetics.bioavailability||{}).map(([k,v]) => `<span class="names-key">BA (${k})</span><span class="names-val">${citeRef(v, pkCite, 'Bioavailability of '+p.names.trade+' via '+k+' route')}</span>`).join('')}
       </div>
     </div>
     <div class="detail-section"><div class="detail-title">Dosing Reference</div>
-      <table class="data-table"><thead><tr><th>Route</th><th>Dose</th><th>Frequency</th><th>Notes</th></tr></thead><tbody>${dosingRows}</tbody></table>
+      <table class="data-table"><thead><tr><th>Route</th><th>Dose</th><th>Frequency</th><th>Notes</th></tr></thead>
+      <tbody>${(p.dosing||[]).map(d => `<tr><td>${d.route}</td><td>${citeRef(d.dose, dosingCite, 'Reported dosing range for '+p.names.trade+' via '+d.route+' — '+d.notes)}</td><td>${d.frequency}</td><td style="color:var(--text-muted)">${d.notes}</td></tr>`).join('')}</tbody></table>
     </div>
     <div class="detail-section"><div class="detail-title">Protein Cascades Involved</div>
       <div class="cascade-list">${cascadesHTML||'<span style="font-size:0.78rem;color:var(--text-muted)">No cascade data available.</span>'}</div>
     </div>
-    <div class="detail-section"><div class="detail-title">Clinical Effects</div>${effectsFull}</div>
+    <div class="detail-section"><div class="detail-title">Clinical Effects</div>
+      ${(p.effects.clinical_effects||[]).map((e,i) => {
+        const effCite = (e.citations && e.citations[0]) ? { authors: 'See citation', year: '', title: e.citations[0], url: e.citations[0] } : (hc0 || c0);
+        return `<div style="display:flex;align-items:baseline;gap:0.4rem;margin-bottom:0.3rem">
+          <span class="badge ${evidenceClass(e.evidence)}" style="font-size:0.58rem">${e.evidence}</span>
+          <span style="font-size:0.8rem;color:var(--text-secondary)">${citeRef(e.name, effCite, e.evidence+' evidence for '+e.name+' ('+e.subcategory+')')} <span style="color:var(--text-muted);font-size:0.72rem">(${e.subcategory})</span></span>
+        </div>`;
+      }).join('')}
+    </div>
     <div class="detail-section"><div class="detail-title">Research Overview</div>
       <div class="research-tabs">
         <button class="rtab active" onclick="switchRtab(this,'${mid}','human')">Human Use</button>
@@ -2921,24 +3068,24 @@ function buildDetailHTML(p) {
         <button class="rtab" onclick="switchRtab(this,'${mid}','perf')">Performance &amp; Enhancement</button>
       </div>
       <div id="rt-${mid}-human" class="rtab-content active">
-        <p class="research-text">${human.summary||'No human use data available.'}</p>
+        <p class="research-text">${hc0 ? citeRef(human.summary||'No human use data available.', hc0, 'Summary of human clinical use of '+p.names.trade) : (human.summary||'No human use data available.')}</p>
         ${(human.citations||[]).length ? `<div style="margin-top:0.5rem">${(human.citations||[]).map((c,i) => `<span class="superscript">[${i+1}]</span> <a class="cite-link" href="${c.url}" target="_blank">${c.authors} (${c.year})</a>`).join('  ')}</div>` : ''}
       </div>
       <div id="rt-${mid}-animal" class="rtab-content">
-        <p class="research-text">${animal.summary||'No animal model data available.'}</p>
+        <p class="research-text">${ac0 ? citeRef(animal.summary||'No animal model data available.', ac0, 'Summary of animal model studies for '+p.names.trade) : (animal.summary||'No animal model data available.')}</p>
         ${(animal.citations||[]).length ? `<div style="margin-top:0.5rem">${(animal.citations||[]).map((c,i) => `<span class="superscript">[${i+1}]</span> <a class="cite-link" href="${c.url}" target="_blank">${c.authors} (${c.year})</a>`).join('  ')}</div>` : ''}
       </div>
       <div id="rt-${mid}-perf" class="rtab-content">
-        <p class="research-text">${perf.summary||'No performance data available.'}</p>
+        <p class="research-text">${(perf.citations||[]).length ? citeRef(perf.summary||'No performance data available.', perf.citations[0], 'Summary of performance/enhancement research for '+p.names.trade) : (perf.summary||'No performance data available.')}</p>
         ${(perf.citations||[]).length ? `<div style="margin-top:0.5rem">${(perf.citations||[]).map((c,i) => `<span class="superscript">[${i+1}]</span> <a class="cite-link" href="${c.url}" target="_blank">${c.authors} (${c.year})</a>`).join('  ')}</div>` : ''}
       </div>
     </div>
     <div class="detail-section"><div class="detail-title">Safety Profile</div>
       <div class="names-grid">
-        <span class="names-key">Rating</span><span class="names-val"><span style="color:${safetyColor(p.effects.safety_rating)}">${p.safety.label}</span></span>
-        ${p.safety.adverse_events ? `<span class="names-key">Adverse Events</span><span class="names-val">${p.safety.adverse_events}</span>` : ''}
-        ${p.safety.contraindications&&p.safety.contraindications.length ? `<span class="names-key">Contraindications</span><span class="names-val">${p.safety.contraindications.join(', ')}</span>` : ''}
-        <span class="names-key">Regulatory</span><span class="names-val">${p.safety.regulatory}</span>
+        <span class="names-key">Rating</span><span class="names-val"><span style="color:${safetyColor(p.effects.safety_rating)}">${citeRef(p.safety.label, safetyCite, 'Safety classification of '+p.names.trade+' based on available human and animal data')}</span></span>
+        ${p.safety.adverse_events ? `<span class="names-key">Adverse Events</span><span class="names-val">${citeRef(p.safety.adverse_events, safetyCite, 'Reported adverse events associated with '+p.names.trade)}</span>` : ''}
+        ${p.safety.contraindications&&p.safety.contraindications.length ? `<span class="names-key">Contraindications</span><span class="names-val">${citeRef(p.safety.contraindications.join(', '), safetyCite, 'Known contraindications for '+p.names.trade)}</span>` : ''}
+        <span class="names-key">Regulatory</span><span class="names-val">${citeRef(p.safety.regulatory, safetyCite, 'Regulatory status of '+p.names.trade)}</span>
       </div>
     </div>
     <div class="detail-section"><div class="detail-title">Vendor Quality Ratings</div>${vendorHTML}</div>
@@ -3315,6 +3462,9 @@ function buildTableDetail(id) {
 ═══════════════════════════════════════════════ */
 loadData();
 </script>
+
+<!-- INLINE CITATION TOOLTIP -->
+<div id="cite-tooltip"><div class="ct-arrow" id="ct-arrow"></div></div>
 
 <!-- PEPTIDE DETAIL MODAL -->
 <div id="pv-modal">
