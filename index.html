@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Peptide Vault — Scientific Peptide Reference</title>
+<title>Biobook — Scientific Peptide Reference</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 /* ═══════════════════════════════════════════════
    DESIGN TOKENS
@@ -80,13 +80,14 @@ input, select { font-family: var(--sans); }
   height: 58px;
 }
 .logo {
-  font-family: var(--garamond);
-  font-size: 1.15rem;
-  font-weight: 500;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: var(--text-primary);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.12em;
   white-space: nowrap;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .logo span { color: var(--text-muted); }
 .search-wrap {
@@ -177,13 +178,14 @@ input, select { font-family: var(--sans); }
   margin-bottom: 1rem;
 }
 #hero h1 {
-  font-family: var(--garamond);
-  font-size: clamp(2.4rem, 5vw, 4rem);
-  font-weight: 400;
-  letter-spacing: 0.02em;
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: var(--text-primary);
   margin-bottom: 0.75rem;
-  line-height: 1.1;
+  line-height: 1.0;
 }
 #hero h1 em {
   font-style: italic;
@@ -1418,7 +1420,7 @@ footer {
 <!-- ═══ HEADER ═══ -->
 <header id="header">
   <div class="header-inner">
-    <a class="logo" href="#" onclick="showMain()">PEPTIDE<span>.</span>VAULT</a>
+    <a class="logo" href="#" onclick="showMain()">BIOBOOK</a>
     <div class="search-wrap">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
       <input type="text" id="search" placeholder="Search peptides, sequences, CAS…" oninput="debounceFilter()">
@@ -1438,7 +1440,7 @@ footer {
 <!-- ═══ HERO ═══ -->
 <section id="hero">
   <div class="hero-tag">Peptide Research Reference</div>
-  <h1>Peptide <em>Vault</em></h1>
+  <h1>Biobook</h1>
   <p>A scientific reference for therapeutic peptides — amino acid sequences, pharmacokinetics, protein cascades, clinical effects, and peer-reviewed citations.</p>
   <div class="hero-stats">
     <div class="hero-stat"><span class="hero-stat-n" id="stat-total">9</span><span class="hero-stat-l">Peptides</span></div>
@@ -1544,7 +1546,7 @@ footer {
 <div class="modal-overlay" id="auth-modal" onclick="handleOverlayClick(event)">
   <div class="modal">
     <div class="modal-header">
-      <span class="modal-title">Peptide Vault</span>
+      <span class="modal-title">Biobook</span>
       <button class="modal-close" onclick="closeAuth()">✕</button>
     </div>
     <div class="modal-tabs">
