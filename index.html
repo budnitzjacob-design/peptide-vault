@@ -156,7 +156,7 @@ input, select { font-family: var(--sans); }
 #hero {
   background: #000;
   border-bottom: 1px solid var(--border);
-  padding: 4rem 2rem 3rem;
+  padding: 5rem 2rem 3.5rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -171,33 +171,34 @@ input, select { font-family: var(--sans); }
 }
 .hero-tag {
   font-family: var(--mono);
-  font-size: 0.65rem;
-  letter-spacing: 0.25em;
+  font-size: 0.62rem;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 1rem;
+  color: #333;
+  margin-bottom: 1.25rem;
 }
 #hero h1 {
-  font-family: 'Oswald', sans-serif;
-  font-size: clamp(2.8rem, 6vw, 5rem);
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-family: var(--garamond);
+  font-size: clamp(4rem, 9vw, 8rem);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -0.015em;
+  text-transform: none;
   color: var(--text-primary);
   margin-bottom: 0.75rem;
-  line-height: 1.0;
+  line-height: 0.95;
 }
 #hero h1 em {
-  font-style: italic;
+  font-style: normal;
   color: var(--text-secondary);
 }
 #hero p {
-  color: var(--text-muted);
-  font-size: 0.88rem;
-  max-width: 500px;
+  color: #3a3a3a;
+  font-size: 0.8rem;
+  max-width: 480px;
   margin: 0 auto;
   line-height: 1.7;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
 }
 .hero-stats {
   display: flex;
@@ -221,19 +222,20 @@ input, select { font-family: var(--sans); }
 }
 .hero-stat-n {
   font-family: var(--garamond);
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 400;
+  font-style: italic;
   color: var(--text-primary);
   display: block;
   line-height: 1;
 }
 .hero-stat-l {
-  font-size: 0.62rem;
+  font-size: 0.58rem;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--text-muted);
+  letter-spacing: 0.2em;
+  color: #2e2e2e;
   display: block;
-  margin-top: 0.35rem;
+  margin-top: 0.4rem;
 }
 
 /* ═══════════════════════════════════════════════
@@ -362,12 +364,13 @@ input, select { font-family: var(--sans); }
 .card-names { flex: 1; min-width: 0; }
 .card-trade {
   font-family: var(--garamond);
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: italic;
   color: var(--text-primary);
-  line-height: 1.15;
+  line-height: 1.1;
   display: block;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.005em;
 }
 .card-scientific {
   font-size: 0.73rem;
@@ -612,8 +615,10 @@ input, select { font-family: var(--sans); }
 .cascade-toggle:hover { background: #111; }
 .cascade-toggle.open { background: #0f0f0f; }
 .cascade-name {
-  font-size: 0.78rem;
-  font-weight: 600;
+  font-family: var(--garamond);
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-style: italic;
   color: var(--text-primary);
 }
 .cascade-count {
@@ -823,8 +828,10 @@ input, select { font-family: var(--sans); }
   display: none;
 }
 #bookmarks-view h2 {
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-family: var(--garamond);
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
   color: var(--text-primary);
   margin-bottom: 1.25rem;
 }
@@ -947,12 +954,13 @@ footer {
 .pv-table tr.expanded-row td { background: #060606; border-bottom-color: #1c1c1c; }
 .td-name { min-width: 140px; }
 .td-trade {
-  font-size: 0.82rem;
-  color: var(--text-primary);
   display: block;
   font-family: var(--garamond);
-  font-size: 0.95rem;
-  letter-spacing: 0.01em;
+  font-size: 1.05rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--text-primary);
+  letter-spacing: -0.005em;
 }
 .td-sci {
   font-size: 0.62rem;
@@ -1174,7 +1182,7 @@ footer {
   gap: 1rem;
 }
 .modal-header-names { flex: 1; }
-.modal-trade { font-family: var(--garamond); font-size: 1.75rem; font-weight: 500; line-height: 1.2; margin-bottom: 0.3rem; }
+.modal-trade { font-family: var(--garamond); font-size: 2.1rem; font-weight: 400; font-style: italic; line-height: 1.1; margin-bottom: 0.3rem; letter-spacing: -0.01em; }
 .modal-sci { font-size: 0.78rem; color: var(--text-muted); letter-spacing: 0.02em; }
 .modal-header-actions { display: flex; align-items: center; gap: 0.5rem; flex-shrink: 0; padding-top: 0.25rem; }
 
